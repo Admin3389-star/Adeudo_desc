@@ -1,0 +1,253 @@
+function addClass(objElement, CssClass)
+{
+	objElement.className += " " + CssClass;
+}
+
+function hasClass(ele,cls) 
+{
+    return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+}
+
+function removeClass(ele,cls) 
+{
+	if (hasClass(ele,cls)) {
+		var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+		ele.className=ele.className.replace(reg,' ');		
+	}
+}
+
+function CorreoValido(email, div) {    
+    var caract = new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/);
+
+    if (caract.test(email) == false) {        
+        return false;
+    } else {        
+        return true;
+    }
+}
+
+function disableEnterKey(e) {
+    var key;
+    if (window.event) {
+        key = window.event.keyCode; //IE
+    } else {
+        key = e.which; //firefox 
+    }
+    if (key == 13) {
+        return false;
+    } else {
+        return true;
+    }
+}
+function noSpace(e) {
+    tecla = (document.all) ? e.keyCode : e.which;
+    return tecla != 32;
+}
+function trim(stringToTrim) {
+	return stringToTrim.replace(/^\s+|\s+$/g,"");
+}
+function ltrim(stringToTrim) {
+	return stringToTrim.replace(/^\s+/,"");
+}
+function rtrim(stringToTrim) {
+	return stringToTrim.replace(/\s+$/,"");
+}
+
+function noRight(event)
+{
+	if (event.button==2)//RIGHT CLICK
+	{
+		alert("Clic derecho deshabilitado");
+		return false;
+	}
+	return true;
+}
+
+function validar(e, patron) 
+{ // 1
+    tecla = (document.all) ? e.keyCode : e.which; // 2
+    
+    if (tecla == 8 || tecla == 0) return true; // 3
+    
+    te = String.fromCharCode(tecla); // 5
+    return patron.test(te); // 6
+}
+
+function isNumber(e) {	
+    patron = /\d/;    
+    return validar(e, patron);
+}
+
+function isCapital(e) {
+    //return validar(e, );
+}
+
+function isLetter(e) {
+    patron = /\D/;
+    return validar(e, patron);
+}
+
+function toUpperCase(obj) {
+    obj.value = obj.value.toUpperCase();
+}
+
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + name + "=([^&#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(window.location.search);
+    if (results == null)
+        return "";
+    else
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+function displayFieldTextFocus(objInput)
+{
+	if(trim(objInput.value) == objInput.getAttribute("FieldText"))
+	{		
+		objInput.value = "";
+		removeClass(objInput, 'disabled');
+		
+		if(objInput.getAttribute("TextCase") == "U")
+			addClass(objInput, 'textUpper');
+	}
+}
+
+function displayFieldTextBlur(objInput)
+{
+	if(trim(objInput.value) == "" || trim(objInput.value) == objInput.getAttribute("FieldText"))
+	{
+		objInput.value = objInput.getAttribute("FieldText");
+		addClass(objInput, 'disabled');
+		
+		if(objInput.getAttribute("TextCase") == "U")
+			removeClass(objInput, 'textUpper');
+	}
+}
+
+function upperCss(objInput)
+{
+	if(trim(objInput.value) == objInput.getAttribute("FieldText"))
+	{		
+		objInput.value = "";
+		removeClass(objInput, 'disabled');
+	}
+}
+
+function mask(d,sep,pat,nums)
+{
+	if(d.valant != d.value)
+	{
+		val = d.value
+		largo = val.length
+		val = val.split(sep)
+		val2 = ''
+		for(r=0;r<val.length;r++){
+			val2 += val[r]	
+		}
+		if(nums){
+			for(z=0;z<val2.length;z++){
+				if(isNaN(val2.charAt(z))){
+					letra = new RegExp(val2.charAt(z),"g")
+					val2 = val2.replace(letra,"")
+				}
+			}
+		}
+		val = ''
+		val3 = new Array()
+		for(s=0; s<pat.length; s++){
+			val3[s] = val2.substring(0,pat[s])
+			val2 = val2.substr(pat[s])
+		}
+		for(q=0;q<val3.length; q++){
+			if(q ==0){
+				val = val3[q]
+			}
+			else{
+				if(val3[q] != ""){
+					val += sep + val3[q]
+					}
+			}
+		}
+		d.value = val
+		d.valant = val
+	}
+}
+
+function MaxLenght(Text,MaxLenght, e) 
+{ 	
+	if (Text.length >= MaxLenght) 
+	{ 
+		if (navigator.appName == "Netscape") 
+			tecla = e.which 
+		else 
+			tecla = e.keyCode		
+	
+	
+		if (tecla != 8 && tecla != 0) 
+			return false 
+		else	
+			return true 	
+	}	
+}
+
+function TruncateLenght(texto,maxlong)
+{
+	var tecla, int_value, out_value;
+
+	if (texto.value.length > maxlong)
+	{	
+		in_value = texto.value;
+		out_value = in_value.substring(0,maxlong);
+		texto.value = out_value;
+		
+		return false;
+	}
+	return true;
+}
+
+function Imprimir(ObjImprimir) 
+{
+			var bName = navigator.appName;
+			var bVer = parseFloat(navigator.appVersion);
+
+			var contenido = ObjImprimir.innerHTML;
+			ventana = window.open("","Imprimir","width=800,height=600");
+			
+			ventana.document.open();			
+			ventana.document.write('<html><head>');						
+			
+			ventana.document.write('<!-- IE 7 Sin compatibilidad --> ');   
+			ventana.document.write('<meta http-equiv="X-UA-Compatible" content="IE=edge" />');
+		    
+			ventana.document.write('<!--[if !IE 7]>');
+			ventana.document.write('	<style type="text/css">');
+			ventana.document.write('		#main {display:table;height:100%}');
+			ventana.document.write('	</style>');
+			ventana.document.write('<![endif]-->');
+			
+			ventana.document.write('<link href="http://www.icvnl.gob.mx/Styles/maquetado.css" rel="stylesheet" type="text/css" />');
+			ventana.document.write('<link href="http://www.icvnl.gob.mx/Styles/controls.css" rel="stylesheet" type="text/css" />');
+			ventana.document.write('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">');
+			ventana.document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>');
+
+			ventana.document.write('<script>$(document).ready(function () {');
+			ventana.document.write('    window.print();');
+			ventana.document.write('});</script>');
+
+			ventana.document.write('</head><body><div style="padding:5px 10px;">');
+			
+			ventana.document.write('<div id="header">');		
+			ventana.document.write('	<img id="logoICV" src="http://www.icvnl.gob.mx/images/logoICV.png" alt="ICV NL" />');		
+			ventana.document.write('	<div class="clearBoth"></div>');
+			ventana.document.write('</div>');
+			
+			ventana.document.write(contenido);
+			ventana.document.write('</div></body></html>');
+			ventana.document.close();
+
+			ventana.focus();
+			//ventana.print();						
+}

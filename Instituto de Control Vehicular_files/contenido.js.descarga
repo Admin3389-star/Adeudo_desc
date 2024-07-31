@@ -1,0 +1,217 @@
+﻿/*MOSTRAR PDF*/
+function pdf(e) {
+    var pdfViewer = document.getElementById("objPDF");
+    var ContenedorViewer = document.getElementById("ContenedorPDF");
+    var newViewer = document.createElement("object");
+    var isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+        },
+        any: function () {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+
+    if (isMobile.any()) {
+        var link = document.createElement('a');
+        link.href = e;
+        link.download = 'pdf.pdf';
+        link.dispatchEvent(new MouseEvent('click'));
+
+    }
+    else {
+        if (pdfViewer.getAttribute('data') != e) {
+            newViewer.setAttribute("data", e);
+            newViewer.setAttribute("type", "application/pdf");
+            newViewer.setAttribute("width", "100%");
+            newViewer.setAttribute("height", "810px");
+            newViewer.id = "objPDF"
+            ContenedorViewer.removeChild(pdfViewer);
+            ContenedorViewer.appendChild(newViewer);
+        }
+    }
+}
+
+function pdf2(e) {
+    var pdfViewer = document.getElementById("objPDF");
+    var ContenedorViewer = document.getElementById("ContenedorPDF");
+    var newViewer = document.createElement("object");
+    var isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+        },
+        any: function () {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+
+    if (isMobile.any()) {
+        var link = document.createElement('a');
+        link.href = e;
+        link.download = 'pdf.pdf';
+        link.dispatchEvent(new MouseEvent('click'));
+
+    }
+    else {
+        window.open(e);
+
+    }
+}
+
+/*Termina MOSTRAR PDF*/
+
+/*Pagina ¿Quines Somos?*/
+function divOpen(e) {
+    var content = document.getElementById(e);
+    var i;
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+}
+
+jQuery(document).ready(function () {
+
+    /* Custom jQuery for the example */
+    $("#show-list").click(function (e) {
+        e.preventDefault();
+
+        $('#list-html').toggle('fast', function () {
+            if ($(this).is(':visible')) {
+                $('#show-list').text('Hide underlying list.');
+                $(".topbar").fadeTo('fast', 0.9);
+            } else {
+                $('#show-list').text('Show underlying list.');
+                $(".topbar").fadeTo('fast', 1);
+            }
+        });
+    });
+
+    $('#list-html').text($('#org').html());
+
+    $("#org").bind("DOMSubtreeModified", function () {
+        $('#list-html').text('');
+
+        $('#list-html').text($('#org').html());
+
+        prettyPrint();
+    });
+});
+
+/*Termina Pagina ¿Quines Somos?*/
+
+
+/*redirigi a paginas*/
+function redirigir(e) {
+    window.open(e);
+}
+
+
+function Abrirpagina(e) {
+    window.location.href = e;
+}
+
+/*EMPIEZA BTN BUSCAR*/
+
+function Buscar() {
+    var texto = document.getElementById("buscar1")
+    if (texto.value != "") {
+        window.location.href = "Busqueda?buscar=" + texto.value;
+
+    }
+}
+
+function Buscar2() {
+    var texto = document.getElementById("buscar2")
+    if (texto.value != "") {
+        window.location.href = "Busqueda?buscar=" + texto.value;
+    }
+
+}
+
+function BuscarEnter(e) {
+    if (e.keyCode == 13)
+    { Buscar(); }
+}
+
+function BuscarEnter2(e) {
+    if (e.keyCode == 13)
+    { Buscar2(); }
+}
+
+/*TERMINA BTN BUSCAR*/
+
+/*slider mas visto*/
+// sandbox disable popups
+if (window.self !== window.top && window.name != "view1") {
+    ;
+    window.alert = function () { /*disable alert*/ };
+    window.confirm = function () { /*disable confirm*/ };
+    window.prompt = function () { /*disable prompt*/ };
+    window.open = function () { /*disable open*/ };
+}
+
+// prevent href=# click jump
+document.addEventListener("DOMContentLoaded", function () {
+    var links = document.getElementsByTagName("A");
+    for (var i = 0; i < links.length; i++) {
+        if (links[i].href.indexOf('#') != -1) {
+            links[i].addEventListener("click", function (e) {
+                console.debug("prevent href=# click");
+                if (this.hash) {
+                    if (this.hash == "#") {
+                        e.preventDefault();
+                        return false;
+                    }
+                    else {
+                        /*
+                        var el = document.getElementById(this.hash.replace(/#/, ""));
+                        if (el) {
+                        el.scrollIntoView(true);
+                        }
+                        */
+                    }
+                }
+                return false;
+            })
+        }
+    }
+}, false);
+
+/*slider mas visto*/
+function navegarvistos(e) {
+    var divmasvisto = document.getElementById('divmasvisto');
+
+    if (e == 1) {
+        divmasvisto.scrollLeft = divmasvisto.scrollLeft - 50;
+    }
+    else {
+        divmasvisto.scrollLeft = divmasvisto.scrollLeft + 50;
+    }
+}
+/*Termina slider mas visto*/

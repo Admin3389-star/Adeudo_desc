@@ -1,0 +1,1691 @@
+﻿/*...................................*pantalla grande*.........................................*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@media(min-width:768px){.apareceicono{display:none !important;}}
+@media(min-width:1000px){.paddingmasvisto{padding-right:10% !important; padding-left:10% !important;}} 
+@media (min-width:768px)
+{
+  .aparecemenu{ display:none !important;}
+  .desaparecemenu { display:block;}
+  
+    .buscar1
+    {
+        display: none !important;
+    }
+
+    .buscar2
+    {
+        display: block !important;
+    }
+
+    .amenu
+    {
+        display: block !important;
+    }
+
+    .listaoculta
+    {
+        display: none !important;
+    }
+
+    .bordeoculto
+    {
+        border-bottom: none !important;
+    }
+
+    .bordeoculto2
+    {
+        border-right: block;
+    }
+
+    .imagen
+    {
+        display: none !important;
+    }
+
+    .paddingright
+    {
+        padding-right: 3px;
+    }
+}
+
+@media(min-width:992px)
+{
+        .bodedf
+    {
+            border-left:1px  solid grey;
+            padding-left:4% !important;
+    }
+}
+ #contenedorfacebook {
+
+   position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.iframe-responsivo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#contenedorfacebookmovil {
+
+    display:none !important;
+}
+
+/*.......................................*Termina pantalla grande*.............................................*/
+
+/*.........................................Tamaño Movil*.......................................................*/
+@media (min-width:767px)
+{
+  .apareceicono{display:block;}
+}
+
+@media (min-width:767px)
+{
+  .aparecemenu{display:block;}
+}
+
+@media (max-width:767px)
+{
+  .desaparecemenu { display:none !important;}
+}
+ 
+@media (max-width:575px)
+{
+  .container
+    {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+}
+
+@media (min-width: 1800px){
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 2000px){
+	.container {
+		max-width: 1300px;
+	}
+}
+
+@media (max-width:1199px){
+    .imgicono2
+    {
+      max-width:25%;
+    }
+}
+
+@media (max-width:767px){
+    .imgicono
+    {
+      max-width:25%;
+    }
+}
+
+@media (max-width:980px){
+    .imgicono
+    {
+     width:40%;
+    }
+}
+
+
+@media (max-width:767px)
+{
+    .paddingright
+    {
+        padding-right: 0px;
+    }
+
+    .imagen
+    {
+        display: block;
+    }
+    .mega-menu
+    {
+        width: 100% !important;
+    }
+    .mega-menu2
+    {
+        width: 100% !important;;
+    }
+
+    .row
+    {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: 40px;
+    }
+    .buscar1
+    {
+        display: block;
+    }
+
+
+    .buscar2
+    {
+        display: none;
+    }
+
+    .amenu
+    {
+        display: none;
+    }
+
+    .listaoculta2
+    {
+        display: block;
+    }
+
+    .bordeoculto
+    {
+        border-bottom: block !important;
+    }
+    
+    
+}
+
+@media (min-width:600px)
+{
+     .iframe-responsivo
+    {
+        height: 200;
+    }
+}
+
+@media (min-width:600px)
+{
+    section
+    {
+        padding-top: 1%;
+    }
+}
+
+@media (max-width:600px)
+{
+    section
+    {
+        padding-top: 1%;
+    }
+
+}
+
+@media (max-width:990px)
+{
+    .redesaparece
+    {
+        display: block !important;
+    }
+
+    .redesdesaparece
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width:1194px)
+{
+    .tamaño
+    {
+        font-size: 9px;
+    }
+}
+
+@media (max-width:990px)
+{
+    .ocultarlinea
+    {
+        border-right: none !important;
+    }
+
+}
+
+@media (min-width:1199px)
+{
+
+    .apareceimg
+    {
+        display: none;
+    }
+
+    .desapareceorg
+    {
+        display: block;
+    } 
+}
+
+@media (max-width:1199px)
+{
+    .desapareceorg
+    {
+        display: none !important;
+    }
+    .apareceimg
+    {
+        display: block !important;
+    }  
+}
+
+@media (max-width:991px)
+{ 
+    .desapareceicono
+     {
+        display: none !important;
+     }
+}
+
+@media (max-width: 767.98px)
+{
+    .navbar-expand-md > .container, .navbar-expand-md > .container-fluid
+    {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+}
+
+
+
+@media (max-width:767px)
+{
+    #footer h5
+    {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .containertramites
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .containertramites
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 576px)
+{
+    .containertramites
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width:600px)
+{
+    .marginpad
+    {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+@media (max-width:600px)
+{
+    .marginpad
+    {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:980px)
+{
+    .quitar100
+    {
+         height:auto !important;
+    }
+}
+
+@media (max-width:991px){
+
+ #contenedorfacebookcompu {
+
+    display:none;
+}
+
+ #contenedorfacebookmovil {
+
+    display:block !important;
+}
+
+.iframe-responsivo {
+  display:none;
+}
+
+}
+
+@media (min-width:375px)
+{
+    .navbar-nav > li 
+    {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;;
+            font-size: 16px !important;
+    }
+     
+}
+
+@media (min-width:414px)
+{
+    
+    .navbar-nav > li 
+    {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;;
+            font-size: 15px !important;
+    }
+     
+    
+}
+/*............................................................................................Diseño Tabla Responsive...........................................................................................................................*/
+
+@media only screen and (max-width: 800px)
+{
+
+    /* Force table to not be like tables anymore */
+    #no-more-tables table, #no-more-tables thead, #no-more-tables tbody, #no-more-tables th, #no-more-tables td, #no-more-tables tr
+    {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #no-more-tables thead tr
+    {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #no-more-tables tr
+    {
+        border: 1px solid #ccc;
+    }
+
+    #no-more-tables td
+    {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    #no-more-tables td:before
+    {
+        /* Now like a table header */
+        position: absolute; /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /*
+                            	Label the data
+                            	*/
+    #no-more-tables td:before
+    {
+        content: attr(data-title);
+    }
+
+}
+
+
+.table-hover thead tr:hover th, .table-hover tbody tr:hover td
+{
+    background-color: #e8e8e7;
+}
+
+th
+{
+    text-align: inherit;
+    width: 5em;
+}
+
+.table th, .table td {
+   
+    vertical-align: top;
+   border-top:none !important; 
+}
+
+
+/*............................................................................................Termina Diseño Tabla Responsive...........................................................................................................................*/
+
+
+
+/*.....................................................................Termina Tamaño Movil*.......................................................*/
+
+/*..........................................................................Redes.......................................................................*/
+
+.redesdesaparece
+{
+    display: block;
+}
+
+.redesaparece
+{
+    display: none;
+}
+
+/*..........................................................................Termina Redes.............................................................*/
+
+
+
+/*.........................................................................Sombra.....................................................................*/
+
+.sombra
+{
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+}
+
+.sombradrop
+{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.59);
+}
+
+/*.......................................................................Termina Sombra..............................................................*/
+
+/*.......................................................................Contenedores Paginas................................................................*/
+
+.divPrincipal
+{
+    background: #E8E8E7;
+}
+
+.containerMasVisto
+{
+    background: #fff;
+}
+
+
+.container
+{
+    padding-left: 5%;
+    padding-right:5%;
+}
+
+/*...........................................Termina Contenedores Paginas................................................................*/
+
+
+/*........................................... tipoletra...................................................................................*/
+.tipoLetraTitulos
+{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 75%;
+    border-bottom: 2px solid #333;
+    color: #333;
+}
+
+.tipoletraparrafo
+{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+    color:#333;
+    font-size: 75%;
+}
+
+.tipoletraparrafoOrg
+{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+    font-size: 80%;
+    color: #333;
+}
+
+h6
+{
+    font-size: 75%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h5
+{
+ font-size:13px;
+ font-weight: bold;
+}
+
+.letraHover
+{
+    font-size: 70%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+ .tipoletraimg
+    {
+        font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif ;
+        font-size: 70%;
+        vertical-align:middle ;
+        margin: 0px;
+    }
+    
+   @media(max-width:1212px)
+   {
+       .tipoletraimg
+        {
+            font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif ;
+            font-size: 60%;
+            vertical-align:middle ;
+            margin: 0px;
+        }
+   }
+   
+   .tituloProgramas
+   {
+      font-size:20px;
+      font-weight:bold;
+       font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif ;
+   }
+   
+   .parrafoprogramas
+   {
+        font-size:15px; 
+         font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif ;
+   }
+   
+   .tipoletrafont{ font-size:21px !important}
+/*...........................................Termina tipoletra...................................................................................*/
+
+
+/*...........................................Hovers y Movimiento de letras.......................................................................*/
+
+:focus {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333 !important;
+}
+
+.main
+{
+    width: 50%;
+    margin: 50px auto;
+}
+
+
+.movimiento
+{
+    float: center !important;
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+
+.movimiento:hover
+{
+    font-size: 15px;
+    -webkit-transform: scale(1.1);
+}
+
+.movimiento2
+{
+    float: center;
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+    z-index: 2;
+}
+
+.movimiento2:hover
+{
+    font-size: 15px;
+    -webkit-transform: scale(1.1);
+    z-index: 2;
+}
+
+.movimiento3
+{
+    float: center;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.movimiento3:hover
+{
+    font-size: 4px;
+    margin-top: -10px;
+}
+
+.movimiento5
+{
+    -webkit-transition: margin 0.1s ease-out;
+    -moz-transition: margin 0.1s ease-out;
+    -ms-transition: margin 0.1s ease-out;
+    transition: padding 0.1s ease-out;
+}
+
+.movimiento6:hover
+{
+    padding-left: 10px;
+    
+}
+
+a:link
+{
+    color: #333;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #333;
+}
+a:active
+{
+    color: #333;
+}
+a:hover
+{
+    color: red;
+}
+
+.hoverp:hover
+{
+    color: red;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: #333;
+}
+
+.title:hover
+{
+  color:Red;
+}
+
+
+/*...........................................Termian Hovers y Movimiento de letras.......................................................................*/
+
+/*..............................................................Footer....................................................................................*/
+
+.columna{
+    position: relative !important;
+    width: 100% !important;
+    height: 9px !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+#footer a
+{
+    color: #fff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+    font-size: 11px;
+}
+
+section .section-title
+{
+    text-align: center;
+    color: A2A2A;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+#footer
+{
+    background: #2A2A2A !important;
+    align-self:flex-end;
+    line-height:1;
+    width:100% !important;
+  
+}
+
+body {
+
+min-height:100vh !important;
+flex-wrap:wrap !important;
+width:100% !important;
+display:flex !important;
+margin:0;
+padding:0;
+}
+
+#footer hr
+{
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#footer ul.social li
+{
+    padding: 3px 0px;
+}
+#footer ul.social li a i
+{
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.social li:hover a i
+{
+    font-size: 30px;
+    margin-top: -10px;
+}
+#footer ul.social li a, #footer ul.quick-links li a
+{
+    color: #fff;
+}
+#footer ul.social li a:hover
+{
+    color: #fff;
+}
+#footer ul.quick-links li
+{
+    padding: 3px 10px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.quick-links li:hover
+{
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+#footer ul.quick-links li a i
+{
+    margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i
+{
+    font-weight: 700;
+}
+
+
+
+/*..............................................................Termina Footer....................................................................................*/
+
+/*..............................................................Colores botones buscar...................................................................................*/
+
+.btn-danger
+{
+     background-color:#E5212F;
+}
+
+.search_input:focus
+{
+    padding: 0 10px;
+    width: 200px;
+    height:30px
+    transition: width 0.4s linear;
+}
+
+.btnbuscar
+{
+    color: #E5212F;
+}
+
+.btn-link:hover
+{
+    color: #333;
+    text-decoration: underline;
+}
+
+.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file
+{
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+    margin: 2px;
+}
+
+
+.search_input
+{
+    /* color: #dc3545; */
+    border: 0;
+    outline: 0;
+    background: #CAC9C9;
+    border-radius: 30px;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    padding: 0px;
+    height:30px
+}
+
+.searchgrande
+{
+    /* color: #dc3545; */
+    border: 0;
+    outline: 0;
+    background: #CAC9C9;
+    border-radius: 30px;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+.searchbar:hover > .search_input
+{
+    padding: 0 10px;
+    width: 200px;
+    height:30px
+    transition: width 0.4s linear;
+}
+
+.searchbargrande:hover > .searchgrande
+{
+    padding: 0 10px;
+    width: 230px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon
+{
+    background: white;
+    color: #e74c3c;
+}
+
+.searchbargrande:hover > .search_icon
+{
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon {
+    height: 30px;
+    width: 30px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    color: #ffffff !important;
+    background: #E5212F;
+}
+
+.navbar-nav
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0;
+    list-style: none;
+}
+.searchbar:hover > .search_icon
+{
+    background: #888888;
+    color: #f8f9fa;
+}
+
+.searchbargrande:hover > .search_icon
+{
+    background: #888888;
+    color: #f8f9fa;
+}
+
+/*..............................................................Termina Colores botones buscar...................................................................................*/
+
+/*...............................................................Carrusel.........................................................................................................*/
+.carousel-indicators li
+{
+    background-color: #E5212F;
+    border-radius: 5%;
+    width: 11px;
+    height: 11px;
+    margin: 5px;
+}
+
+.carousel-control-prev-icon
+{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon
+{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators {
+  bottom:-50px !important;
+}
+.carousel-inner {
+   margin-bottom:50px !important;
+}
+
+/*...................................................................................Termina Carrusel.....................................................................................................................*/
+
+
+/*......................................................................................Menu...............................................................................................................................*/
+@media (min-width:768px){
+        .navbar-nav li:hover>.dropdown-menu {
+          display:   block;
+    }
+}
+
+.dropdown-menu {
+  
+    top: 90% !important;
+   
+}
+
+.mega-menu
+{
+    width: 550px;
+    overflow: hidden;
+    height: auto;
+    padding: 10px;
+}
+.mega-menu2
+{
+    width: 250px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.mega-menu3
+{
+    width: 340px;
+    overflow: hidden;
+    padding: 10px;
+}
+.mega-menu2 a
+{
+    text-decoration: none;
+    color: cadetblue;
+}
+.mega-menu2 .sub-menu-heading
+{
+    color: darkcyan;
+}
+.mega-menu a
+{
+    text-decoration: none;
+    color: cadetblue;
+}
+.mega-menu .sub-menu-heading
+{
+    color: darkcyan;
+}
+
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.0);
+    border-color: rgba(0, 0, 0, 0.0);
+}
+
+
+.nav-link:hover
+
+{
+    background-color: #CAC9C9;
+}
+
+.nav-link2:hover
+
+{
+    background-color: #CAC9C9;
+}
+
+div.dropdown-multicol
+{
+    width: 30em;
+}
+
+
+.navbar-nav > li.nav-item.dropdown
+{
+    position: relative;
+}
+
+.multi-column-dropdown
+{
+    list-style: none;
+    margin-left: 20px;
+    padding: 0px;
+}
+
+.multi-column-dropdown li a
+{
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    color: rgb(0, 0, 0);
+    white-space: normal;
+    margin-top: 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 12px;
+}
+
+.multi-column-dropdown li a:hover
+{
+    text-decoration: none;
+    color: #f80606;
+}
+
+li.open > a > span
+{
+    border-top: 0px !important;
+    border-bottom: 4px dashed !important;
+}
+
+
+.dropdown-toggle2:after
+{
+    will-change: transform;
+    transition: transform .15s linear;
+}
+
+.dropdown .dropdown-menu.show .dropdown-toggle.open:after
+{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.show .dropdown-toggle:after
+{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.dropdown .dropdown-menu.show .dropdown-item.dropdown-toggle + .dropdown-menu.show
+{
+    left: 101% !important;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+.navbar .dropdown-menu2
+{
+    border: none;
+    background-color: #fff !important;
+}
+
+
+/*......................................................................................Termina Menu...............................................................................................................................*/
+
+/*.......................................................................................Diseño Pagina Tramites*...................................................................................................................*/
+
+.containertramites
+{
+    
+    margin-right:10%;
+    margin-left: 10%;
+    background-color: #E8E8E7;
+}
+
+
+
+span
+{
+    font-size: 13px;
+}
+
+.box
+{
+    padding: 60px 0px;
+}
+
+.box-part
+{
+    background: #FFF;
+    margin: 30px 4px;
+    padding: 40px;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.box-part2
+{
+    background: #FFF;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding:45px 35px 60px;
+    height: 85%;
+}
+
+.box-part3 {
+    background: #FFF;
+    padding: 30px 0px;
+    height: 95%;
+    border-radius: 10px;
+}
+
+.box-part4 {
+    background: #FFF;
+    margin: 25px 4px;
+    padding: 45px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+
+.text
+{
+    margin: 10px 0px;
+}
+
+
+
+a:link
+{
+    color: #333;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #333;
+}
+
+a:active
+{
+    color: #333;
+}
+
+a:hover
+{
+    color: red;
+}
+
+hoverTramites:active
+{
+    color: #333;
+}
+
+hoverTramites:hover
+{
+    color: red;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: #333;
+}
+
+.row5
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+/*.......................................................................................Termina Diseño Pagina Tramites*...................................................................................................................*/
+
+
+
+
+/*.......................................................................................Diseño pagina ¿Quienes Somos?......................................................................................................................*/
+.content
+{
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+/* general */
+.clear
+{
+    clear: both;
+}
+
+
+/* list stuff */
+#org
+{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+#show-list
+{
+    cursor: pointer;
+}
+
+/* Custom chart styling */
+.jOrgChart
+{
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Custom node styling */
+.jOrgChart .node
+{
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    border: 5px solid white;
+    color: #343434;
+    -moz-border-radius: 8px;
+}
+
+.node p
+{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 12px;
+    padding: 2px;
+}
+
+
+/*.......................................................................................Termina Diseño pagina ¿Quienes Somos?......................................................................................................................*/
+
+/*............................................................................................ Organigrama............................................................................................................................................*/
+.organigrama *
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.organigrama ul
+{
+    padding-top: 20px;
+    position: relative;
+}
+
+.organigrama li
+{
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    padding: 20px 5px 0px 5px;
+    position: relative;
+}
+
+.organigrama li::before, .organigrama li::after
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    border-top: 1px solid #2A2A2A;
+    width: 50%;
+    height: 20px;
+}
+
+.organigrama li::after
+{
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #2A2A2A;
+}
+
+.organigrama li:only-child::before, .organigrama li:only-child::after
+{
+    display: none;
+}
+
+.organigrama li:only-child
+{
+    padding-top: 0;
+}
+
+.organigrama li:first-child::before, .organigrama li:last-child::after
+{
+    border: 0 none;
+}
+
+.organigrama li:last-child::before
+{
+    border-right: 1px solid #2A2A2A;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+.organigrama li:first-child::after
+{
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+
+.organigrama ul ul::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid #2A2A2A;
+    width: 0;
+    height: 20px;
+}
+
+.organigrama li a
+{
+    border: 1px solid #2A2A2A;
+    padding: 1em 0.75em;
+    text-decoration: none;
+    color: #333;
+    background-color: rgba(255,255,255,0.5);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 0.85em;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.organigrama li a:hover
+{
+    border: 1px solid #2A2A2A;
+    color: #ddd;
+    background-color: #e8e8e7;
+    display: inline-block;
+}
+
+.organigrama > ul > li > a
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.organigrama > ul > li > ul > li > a
+{
+    width: 11em;
+    height: 9em;
+}
+
+/*............................................................................................Termina Organigrama............................................................................................................................................*/
+
+/*.............................................................................................Tooltip............................................................................................................................................*/
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    top: 0;
+    border-width: 0.4rem 0.4rem 0;
+    border-top-color:#E5212F;
+}
+
+/*.............................................................................................Termina Tooltip............................................................................................................................................*/
+
+/*.............................................................................................Texto PDF............................................................................................................................................*/
+.text-info {
+    color: #333 !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+    font-size: 80%;
+}
+
+a.text-info:hover, a.text-info:focus {
+    color:red !important;
+}
+
+a.text-info2:hover, a.text-info2:focus {
+    color:red !important;
+}
+
+.text-info2 {
+    color: #333 !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 75%;
+}
+
+/*.............................................................................................Terminar Texto PDF............................................................................................................................................*/
+
+/*.............................................................................................Programas Vigentes............................................................................................................................................*/
+.mb40{margin-bottom:40px;}
+.team-block { margin-bottom: 20px; }
+.team-content { position: absolute; background-color: rgba(17, 24, 31, 0.8); bottom: 0px; display: inline-block; width: 100%; color: #fff; padding: 30px; }
+.team-img { position: relative; }
+.team-img img { width: 100%; }
+.team-title { }
+.team-meta { color: #9da4aa; font-weight: 400; font-size: 16px; }
+.overlay { border-radius: 0px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%; opacity: 0; transition: 1s ease; background-color: #11181f; }
+.team-img:hover .overlay { opacity: .8; }
+.team-img:hover .team-content { opacity: 0; }
+.text { color: #fff; position: absolute; top: 30%; left: 30%; transform: translate(-26%, -26%); -ms-transform: translate(-26%, -26%); right: 0; font-weight: 400; font-size: 16px; }
+/*.............................................................................................Terminar Programas Vigentes............................................................................................................................................*/
+
+/*.............................................................................................Scroll mas visto............................................................................................................................................*/
+       .o-hidden
+        {
+            overflow: hidden;
+        }
+
+        .nav
+        {
+            transition: transform 0.4s;
+            transform: translateX(50%);
+            left: -50%;
+        }
+        
+        .nav.justify-content-end
+        {
+            transform: translateX(0);
+            left:0%;
+        }
+        
+        .scrolling-wrapper-flexbox {
+              display: flex;
+              flex-wrap: nowrap;
+              overflow-x:auto;
+              width:1px;
+          }
+         
+         ::-webkit-scrollbar {
+              width: 2px;   
+              height:5px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+
+/*.............................................................................................Termina Scroll mas visto............................................................................................................................................*/
+/*.............................................................................................Diseño de imagenes con textos y botones..............................................................................................................................*/
+    
+#padre {
+  position: relative;    /* para poder posicionar el texto de forma absoluta */
+  display: inline-block; /* para que solo ocupe el ancho de la imagen */
+}
+
+.card-title {
+  position: absolute;    /* posición absolute con respecto al padre */
+  bottom: 0;             /* posicionada en la esquina inferior derecha */
+  margin:3%;
+  color:#FFF;
+}
+
+.card-title2 {
+  position: absolute;    /* posición absolute con respecto al padre */
+  bottom: 0;             /* posicionada en la esquina inferior derecha */
+  margin:5%;
+  color:#FFF;
+}
+.letraimagen
+{
+  font-weight: bold;
+  font-size:15px;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.tipoletraparrafoimg
+{
+  font-size:12px;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.btn-light
+{
+    background-color:#fff !important;
+    font-size:11px;
+    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: bold;
+}
+.btn-light:hover
+{
+    color:Red;
+}
+
+@media(max-width:767px)
+{
+    .letraimagen
+    {
+      font-weight: bold;
+      font-size:9px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    .tipoletraparrafoimg
+    {
+      font-size:6px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    .btn-light
+    {
+        background-color:#fff !important;
+        font-size:9px;
+        font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: bold;
+    }
+    .btn-light:hover
+    {
+        color:Red;
+    }
+}
+
+@media(max-width:320px)
+{
+    .letraimagen
+    {
+      font-weight: bold;
+      font-size:8px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    .tipoletraparrafoimg
+    {
+      font-size:5px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    .btn-light
+    {
+        background-color:#fff !important;
+        font-size:9px;
+        font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: bold;
+    }
+    .btn-light:hover
+    {
+        color:Red;
+    }
+}
+
+.letraimagen2
+    {
+      font-weight: bold;
+      font-size:14px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    .tipoletraparrafoimg2
+    {
+      font-size:12px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    .btn-light2
+    {
+        background-color:#fff !important;
+        font-size:10px;
+        font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: bold;
+    }
+    .btn-light2:hover
+    {
+        color:Red;
+    }
+    
+    @media(max-width:767px)
+{
+    .letraimagen2
+    {
+      font-weight: bold;
+      font-size:10px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    .tipoletraparrafoimg2
+    {
+      font-size:8px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    .btn-light2
+    {
+        background-color:#fff !important;
+        font-size:10px;
+        font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: bold;
+    }
+    .btn-light2:hover
+    {
+        color:Red;
+    }
+}
+
+
+@media(max-width:320px)
+{
+     .letraimagen2
+    {
+      font-weight: bold;
+      font-size:8px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    .tipoletraparrafoimg2
+    {
+      font-size:6px;
+      font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    .btn-light2
+    {
+        background-color:#fff !important;
+        font-size:9px;
+        font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: bold;
+    }
+    .btn-light2:hover
+    {
+        color:Red;
+    }
+}

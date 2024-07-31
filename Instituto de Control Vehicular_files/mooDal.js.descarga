@@ -1,0 +1,38 @@
+﻿/// jModal Version 1.0
+/// Raymundo Vargas[CODEx Team]
+/// Requiere jquery version 1.2 o posterior.
+
+function ShowMoodal(ImgMoodal)
+{                           
+    var MoodalControl = $(ImgMoodal).parent()[0];        
+    var Dialogo = $(MoodalControl).children('.Dialogo');       
+    var BackGround = $('<div/>').addClass('wucMoodal-BackGround-Ini');     
+    var Titulo = $(Dialogo).children('.Titulo');
+                                    
+    BackGround.bind('click', function()
+    {
+    
+        $(Titulo).clearQueue().animate({"opacity": .5},50)
+                .animate({"opacity": 1},50)
+                .animate({"opacity": .5},50)
+                .animate({"opacity": 1},50);
+
+    });
+    
+    $(MoodalControl).before($(BackGround));
+    
+    $(Dialogo).css(
+    {
+        top: '50%',
+        left: '50%',
+        marginLeft: -($(Dialogo).width()/2),
+        marginTop: -($(Dialogo).height()/2)
+    });
+   
+    $(BackGround).css('opacity', 0.0).animate({'opacity': 0.10}, 200);
+    
+    //Mostramos el Moodal.
+    $(MoodalControl).removeClass('Invisible');
+    $(ImgMoodal).remove();   
+}
+

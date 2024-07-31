@@ -1,0 +1,302 @@
+﻿/*******************************
+	GRID VIEW Controls Style
+*******************************/
+
+/***** LIGHT BLUE *****/
+table.lightBlue_GW
+{
+	font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;    
+}
+
+table.lightBlue_GW tr th
+{
+	background: url(../images/bg_grid_header.jpg) repeat-x scroll 0 0 #CAE8EA;
+    border: 1px solid #CCCCCC;
+    color: #4F6B72;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 6px;
+    text-align:left;
+}
+
+table.lightBlue_GW tr
+{
+	background-color:White;
+}
+
+table.lightBlue_GW tr td
+{	
+	font-size: 11px;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    padding: 2px 5px 2px 5px;
+}
+
+table.lightBlue_GW tr.Alternate
+{
+	background-color:#F7F6F3;
+}
+
+table.lightBlue_GW tr.Selected
+{
+	
+}
+
+table.lightBlue_GW tr.Selected td
+{
+    background-color:#FAEBA6;
+    cursor:default;   
+}
+
+table.lightBlue_GW tr.Hover
+{
+	
+}
+
+table.lightBlue_GW tr.Hover td
+{
+    background-color:#FFEA8A;  
+    cursor:pointer;
+}
+
+table.lightBlue_GW tr.NoData
+{
+	
+}
+	
+table.lightBlue_GW tr.NoData td
+{
+	background-color:#fee;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;	
+}
+
+table.lightBlue_GW tr.NoData_Aviso
+{
+	
+}
+	
+table.lightBlue_GW tr.NoData_Aviso td
+{
+	background:url(../Images/iconos/comment.png) no-repeat #FEFABA 35px 3px;
+	font-size:13px;
+	font-weight:bold;
+	padding-left:60px;		
+}
+
+/***** LOW RED *****/
+table.lowRed_GW
+{
+	font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;    
+}
+
+table.lowRed_GW tr th
+{
+	background: repeat-x scroll 0 0 #A40100;
+    border: 1px solid #CCCCCC;
+    color: #eee;
+    font-weight: bold;
+    padding: 3px 6px;
+    text-align:left;
+}
+
+table.lowRed_GW tr
+{
+	background-color:White;
+}
+
+table.lowRed_GW tr td
+{	
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    padding: 2px 5px 2px 5px;
+}
+
+table.lowRed_GW tr.Alternate
+{
+	background-color:#F7F6F3;
+}
+
+table.lowRed_GW tr.Selected
+{
+	
+}
+
+table.lowRed_GW tr.Selected td
+{
+    background-color:#FAEBA6;
+    cursor:default;   
+}
+
+table.lowRed_GW tr.Hover
+{
+	
+}
+
+table.lowRed_GW tr.Hover td
+{
+    background-color:#FFEA8A;  
+    cursor:pointer;
+}
+
+table.lowRed_GW tr.NoData
+{
+	
+}
+	
+table.lowRed_GW tr.NoData td
+{
+	background-color:#fee;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;	
+}
+
+table.lowRed_GW tr.NoData_Aviso
+{
+	
+}
+	
+table.lowRed_GW tr.NoData_Aviso td
+{
+	background:url(../Images/iconos/comment.png) no-repeat #FEFABA 35px 3px;
+	font-size:13px;
+	font-weight:bold;
+	padding-left:60px;		
+}
+
+/***** LOW LIGHT GREEN *****/
+table.lightGreen_GW
+{
+	font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 13px;    
+}
+
+table.lightGreen_GW tr th
+{
+	background: repeat-x scroll 0 0 rgba(129,208,177,.3);
+    border: 1px solid #CCCCCC;
+    color: #343434;
+    font-weight: bold;
+    padding: 5px 8px;
+    text-align:left;
+}
+
+table.lightGreen_GW tr
+{
+	background-color:White;
+}
+
+table.lightGreen_GW tr td
+{	
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    padding: 2px 5px 2px 5px;
+}
+
+table.lightGreen_GW tr.Alternate
+{
+	background-color:#F7F6F3;
+}
+
+table.lightGreen_GW tr.Selected
+{
+	
+}
+
+table.lightGreen_GW tr.Selected td
+{
+    background-color:#FAEBA6;
+    cursor:default;   
+}
+
+table.lightGreen_GW tr.Hover
+{
+	
+}
+
+table.lightGreen_GW tr.Hover td
+{
+    background-color:#FFEA8A;  
+    cursor:pointer;
+}
+
+table.lightGreen_GW tr.NoData
+{
+	
+}
+	
+table.lightGreen_GW tr.NoData td
+{
+	background-color:#fee;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;	
+}
+
+table.lightGreen_GW tr.NoData_Aviso
+{
+	
+}
+	
+table.lightGreen_GW tr.NoData_Aviso td
+{
+	background:url(../Images/iconos/comment.png) no-repeat #FEFABA 40px 7px;
+	font-size:13px;
+	font-weight:bold;
+	padding:5px 60px;
+}
+
+table.lightGreen_GW tr.pager:after
+{
+	content: none;	
+}
+
+table.lightGreen_GW tr.pager:before
+{
+	content: none;	
+}
+
+table.lightGreen_GW tr.pager td
+{    
+    text-align:left;        
+}
+
+table.lightGreen_GW tr.pager table
+{	
+    width:auto;
+    display:inline;       
+}
+
+table.lightGreen_GW tr.pager table td
+{
+    background-color:rgba(129,208,177,.3);
+    padding:0px;
+    width:20px;
+    text-align:center;
+    margin:0px 2px;    
+}
+
+table.lightGreen_GW tr.pager table td a,
+table.lightGreen_GW tr.pager table td a:active,
+table.lightGreen_GW tr.pager table td a:visited
+{    
+    font-weight:normal;
+    background-color:#fff;
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+table.lightGreen_GW tr.pager table td a:hover
+{    
+    font-weight:normal;
+    color:#fff;
+    background-color:#FF7F7F;
+    width:100%;
+    height:100%;
+    display:block;
+}

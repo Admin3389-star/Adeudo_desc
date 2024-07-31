@@ -1,0 +1,157 @@
+﻿/***** WUC JMODAL CSS STYLES *****/
+.btn-danger
+{
+    background-color:#E5212F !important;
+    border-color: #E5212F !important;
+}
+.wucMoodal{}
+.wucMoodal-BackGround-Ini
+{
+	position: fixed;
+	min-height:100%;
+	min-width:100%;	
+    left: 0;
+    top: 0;
+    z-index: 5000;
+    
+    background-color:#000;    
+}
+
+.wucMoodal-BackGround
+{	
+   opacity: 0;
+}
+
+.wucMoodal .Dialogo
+{	
+	position:fixed;
+	display:block;
+	min-width:350px;
+	max-width:750px;	
+	z-index:5001;
+		
+	background: none repeat scroll 0 0 #FFFFFF;    
+}
+
+.wucMoodal .Dialogo .Mensaje
+{
+	font-family:Trebuchet MS,Verdana;
+	font-size:14px;
+	color:#343434;
+	margin: 25px 20px;
+	display:table;		
+}
+
+.wucMoodal .Dialogo .Mensaje ul
+{
+	margin-left:15px;		
+}
+
+.wucMoodal .DExito
+{    
+    border:solid 1px #60A174;   
+}
+
+.wucMoodal .DError
+{    
+    border:solid 1px #924949;   
+}
+
+.wucMoodal .DAdvertencia
+{    
+    border:solid 1px #C5A524;   
+}
+
+.wucMoodal .DInformacion
+{    
+    border:solid 1px #4F6D81;   
+}
+
+.wucMoodal .DConfirmacion
+{    
+    border:solid 1px #4F6D81;   
+}
+
+.wucMoodal .Dialogo .Titulo
+{
+    display: block;
+    font-size: 14px;
+    font-family: Verdana;
+    font-weight: bold;
+    height: 24px;
+    padding: 3px 6px 7px;
+    position: relative;
+}
+
+.wucMoodal .Dialogo .TExito
+{  
+    background: url("../images/s_hd.gif") repeat-x scroll 0 0 transparent;
+    border-bottom: solid 1px #60A174;
+    color: #3C7F51;
+}
+
+.wucMoodal .Dialogo .TError
+{  
+    background: url("../images/e_hd.gif") repeat-x scroll 0 0 transparent;
+    border-bottom: solid 1px #924949;
+    color: #6F2C2C;
+}
+
+.wucMoodal .Dialogo .TAdvertencia
+{  
+    background: url("../images/w_hd.gif") repeat-x scroll 0 0 transparent;
+    border-bottom: solid 1px #C5A524;
+    color: #957C17;
+}
+
+.wucMoodal .Dialogo .TInformacion
+{  
+    background: url("../images/p_hd.gif") repeat-x scroll 0 0 transparent;
+    border-bottom: solid 1px #4F6D81;
+    color: #355468;
+}
+
+.wucMoodal .Dialogo .TConfirmacion
+{  
+    background: url("../images/p_hd.gif") repeat-x scroll 0 0 transparent;
+    border-bottom: solid 1px #4F6D81;
+    color: #355468;
+}
+
+
+.wucMoodal .Dialogo .Icon
+{
+	float:left;
+	display:block;
+	margin:20px;		
+	width:32px;
+	height:32px;
+	background: no-repeat 0 0;
+}
+
+.wucMoodal .Dialogo .IExito
+{
+	background-image: url(../images/success.png);
+}
+
+.wucMoodal .Dialogo .IError
+{
+	background-image: url(../images/Error.png);
+}
+
+.wucMoodal .Dialogo .IAdvertencia
+{
+	background-image: url(../images/important.png);
+}
+
+.wucMoodal .Dialogo .IInformacion
+{
+	background-image: url(../images/info.gif);
+}
+
+.wucMoodal .Dialogo .IConfirmacion
+{
+	background-image: url(../images/help.gif);  
+}
+
+
