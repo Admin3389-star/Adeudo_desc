@@ -1,358 +1,735 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0014)about:internet -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Google Tag Manager -->
-    <script async="" src="./Instituto de Control Vehicular_files/gtm.js.descarga"></script><script>        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({ 'gtm.start':
-new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TSKCDJX');</script>
-    <!-- End Google Tag Manager -->
-    <title>
-	Instituto de Control Vehicular
-</title><link rel="icon" type="image/png" href="https://www.icvnl.gob.mx/img/IconoICV200px.png" sizes="64x64"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta http-equiv="x-ua-compatible" content="ie-edge"><meta http-equiv="cache-control" content="no-cache"><link href="./Instituto de Control Vehicular_files/bootstrap.css" rel="stylesheet" type="text/css"><link href="./Instituto de Control Vehicular_files/all.css" rel="stylesheet" type="text/css"><link rel="stylesheet" href="./Instituto de Control Vehicular_files/global.css" type="text/css" media="all">
-    <!-- Global site tag (gtag.js) - Google Analytics
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153462085-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-153462085-1');
-    </script> -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="./Instituto de Control Vehicular_files/js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VRT304QZ68');
-</script>
+<html lang="en"><head id="head"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>ICV - Estado de Cuenta</title>
     
+        <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- IE 7 Sin compatibilidad -->    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">                       
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"><link rel="stylesheet" href="./font-awesome.min.css" type="text/css">
+
+        <!-- Bootstrap core CSS -->
+        <link href="./normalize.css" rel="stylesheet" type="text/css"><link href="./mensajes.css" rel="stylesheet" type="text/css"><link href="./layout.css" rel="stylesheet" type="text/css"><link href="./menu.css" rel="stylesheet" type="text/css"><link href="./controls.css" rel="stylesheet" type="text/css"><link href="./gridView.css" rel="stylesheet" type="text/css"><link href="./calendarExtender.css" rel="stylesheet" type="text/css">
+
+        <!-- Styles -->
+        
+    <link href="./wucJModal.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+            background-color: #color;
+        }
+
+        html {
+            font-size: .8rem;
+        }
+
+        .table td {
+            border-color: transparent;
+        }
+
+        .table thead th {
+            border-color: transparent;
+        }
+
+        @include media-breakpoint-up(sm) {
+            html {
+                font-size: 1.2rem;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            html {
+                font-size: 1.4rem;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            html {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+                           
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->  
+        
+        <script src="./jquery-3.2.1.min.js.descarga"></script>
+        <script src="./popper.min(1).js.descarga" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="./bootstrap.min(1).js.descarga" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <!-- Scripts -->
+        
+    <script src="./mooDal.js.descarga" type="text/javascript"></script>
+    <script src="./Common.js.descarga" type="text/javascript"></script>
+    <script type="text/javascript" src="./JsBarcode.code128.min.js.descarga"></script>
+    <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jsbarcode@3.8.0/dist/JsBarcode.all.min.js"></script>-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ST = getParameterByName("ST");
+
+            if (ST != "") {
+                $('#CPH_PRINCIPAL_chkDonativo').prop('checked', false);
+                $('#btnRegresar').prop('href', 'ConsultaEstadoCuenta.aspx?ST=1');
+            }
+        });
+
+        function showCodigoBarras() {
+            {
+                $("#codigoBarrasLR").JsBarcode($("#CPH_PRINCIPAL_lblLR").html().replace(/\s/g, ""), { width: 1, height: 25, quite: 10, format: "CODE128", displayValue: false, background: '#00000000' });
+                var PlacaO = document.getElementById('CPH_PRINCIPAL_lblPlaca').innerText;
+                document.getElementById('CPH_PRINCIPAL_lblPlacaO').innerText = PlacaO;
+				document.getElementById('CPH_PRINCIPAL_lblPlacaO2').innerText = PlacaO;
+
+            };
+            var ST = getParameterByName("ST");
+
+            if (ST != "") {
+                $("#divStatus").show();
+                $("#divBancos").hide();
+
+                var _href = $("#btnRegresar").attr("href");
+                $("#btnRegresar").attr("href", _href + '?ST=1');
+            }
+
+            // Verificar que estatus tiene para desplegar mensaje de Tarjeta de Circulacion.
+            if ($("#CPH_PRINCIPAL_lblEstatus").html() == 0) {
+                $("#divTCIndefinidaMsg").html("<strong>Usted cuenta con una tarjeta de circulacion condicionada al pago de Refrendo Anual.</strong>");
+            }
+            else {
+                $("#divTCIndefinidaMsg").html("<strong><u>Usted NO cuenta con una tarjeta de circulación condicionada al pago de Refrendo Anual. Podrás efectuar tu pago y recibir tu documentación en la <a href='http://www.nl.gob.mx/listado-ubicaciones/59332' target='_blank'>delegación del ICV mas cercana</a>, 4 días hábiles posteriores a tu pago. </u></strong>");
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function popitup() {
+            var url = document.getElementById("CPH_PRINCIPAL_hfRef");
+            newwindow = window.open(url.value, 'name', 'height=600,width=600');
+            if (window.focus) { newwindow.focus() }
+            return false;
+        }
+        function ScrollToBottom() {
+            $('html,body').animate({
+                scrollTop: $("#btnEnviarCorreo").offset().top
+            },
+                'slow');
+        }
+        function EnviarPorCorreo() {
+            var valida = false;
+            $("#msgErrorMail").hide();
+            $("#msgSuccessMail").hide();
+
+            if (trim($('#txtCorreo')[0].value) == "") {
+                $("#msgErrorMail").html("Capture la direccion de correo a donde se envía");
+                $("#msgErrorMail").show();
+            }
+            else if (!CorreoValido(trim($('#txtCorreo')[0].value))) {
+                $("#msgErrorMail").html("La direccion de correo no es valida");
+                $("#msgErrorMail").show();
+            }
+            else {
+                valida = true;
+                $("#msgErrorMail").hide();
+            }
+
+            if (valida) {
+                $.ajax({
+                    type: "POST",
+                    url: "ConsultaEstadoCuenta.aspx/EnviarCorreo",
+                    data: "{name: '" + $('#txtCorreo')[0].value + "', body: '" + $('#contenidoEstadoCuenta').html() + "' }",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    beforeSend: function () {
+                        $("#btnEnviarCorreo").addClass("disabled");
+                        $("#txtCorreo").addClass("disabled");
+                        $("#btnEnviarCorreo").html("<i class=\"fa fa-refresh fa-spin fa-fw\"></i> Enviando...");
+                    },
+                    success: OnSuccess,
+                    error: function (xhr, errorType, exception) {
+                        var responseText = jQuery.parseJSON(xhr.responseText);
+
+                        $("#msgErrorMail").html(responseText.Message);
+                        $("#msgErrorMail").show();
+                    },
+                    complete: function () {
+                        $("#btnEnviarCorreo").removeClass("disabled");
+                        $("#txtCorreo").removeClass("disabled");
+                        $("#btnEnviarCorreo").html("<i class=\"fa fa-envelope\"></i> Enviar al correo");
+                        ScrollToBottom();
+                    }
+                });
+            }
+            ScrollToBottom();
+        }
+
+        function OnSuccess(response) {
+            $("#msgSuccessMail").show();
+            $('#txtCorreo')[0].value = "";
+        }
+    </script>
+
+
+        <!--[if IE]>
+        <script src="~/scripts/DD_roundies.js"></script>
+        <script type="text/javascript" src="~/scripts/IEFix.js"></script>
+        <![endif]-->
+
+        <style>
+                 /* Large desktop */
+                @media (min-width: 1200px)  
+                {
+                	.actualBootSize
+                	{
+                		background-color:#e0e0e0;
+                		}
+                		
+                    .actualBootSize span::after { 
+                        content: " - Extra Large";
+                    }
+                }
+
+                /* Portrait tablet to landscape and desktop */
+                @media (min-width: 992px) and (max-width: 1199px)  
+                {
+                	.actualBootSize
+                	{
+                		background-color:#e0e0e0;
+                		}
+                		
+                    .actualBootSize span::after { 
+                        content: " - Large";
+                    }
+                }
+                	
+                /* Portrait tablet to landscape and desktop */
+                @media (min-width: 768px) and (max-width: 991px)  
+                {
+                	.actualBootSize
+                	{
+                		background-color:#e0e0e0;
+                		}
+                		
+                    .actualBootSize span::after { 
+                        content: " - Medium";
+                    }
+                }
+
+                /* Landscape phone to portrait tablet */
+                @media (min-width: 576px) and (max-width: 767px)  
+                {
+                	.actualBootSize
+                	{
+                		background-color:#e0e0e0;
+                		}
+                		
+                    .actualBootSize span::after { 
+                        content: " - Small";
+                    }
+                	}
+
+                /* Landscape phones and down */
+                @media (max-width: 575px)  
+                {
+                	.actualBootSize
+                	{
+                		background-color:#e0e0e0;
+                		}
+                		
+                    .actualBootSize span::after { 
+                        content: " - Extra Small";
+                    }
+                }
+        </style>
 </head>
-<body style="background-color: #E8E8E7">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSKCDJX" height="0"
-            width="0" style="display: none; visibility: hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <form method="post" action="https://www.icvnl.gob.mx/EstadodeCuenta" id="form1" class="w-100">
+<body style="font-family: HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif">
+    <div id="main">
+        <!--<div class="actualBootSize">Actual BootSize<span></span></div>-->
+        <form method="post" action="https://www.icvnl.gob.mx:1034/edocuenta24/Consultaestadocuenta.aspx" id="form_main">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1MmRkfTM/LBHT6sAb1n1R0TFW+pxqycAj4nm3JKkCxg54llg=">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="ctl00$CPH_PRINCIPAL$btnConsultar">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+
 </div>
 
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form_main'];
+if (!theForm) {
+    theForm = document.form_main;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./ScriptResource.axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('Error al cargar el marco de trabajo de cliente ASP.NET Ajax.');
+//]]>
+</script>
+
+<script src="./ScriptResource(1).axd" type="text/javascript"></script>
 <div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3EBDC66F">
+	
+	
 </div>
-    <div class="bodyflex">
-        <!--**********************************Empieza el Contenido********************************!-->
-        <nav class="navbar navbar-fixed-top navbar-nav navbar-expand-md navbar-light bg-white sticky-top sombra">
-    <div class="nav-wrapper  w-100  container">
-          <a href="https://www.icvnl.gob.mx/" class="navbar-brand"><img src="./Instituto de Control Vehicular_files/Logo.png" height="40"></a>
-          <a class="nav-link px-2 navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
-          <span class="fa fa-ellipsis-h fa-2x" style="color:#E5212F; cursor: pointer"></span>
-          </a>
-      <div class="collapse navbar-collapse text-left" id="collapsenavbar">
-         <ul class="navbar-nav ml-auto desaparecemenu">
-     <li class="nav-item dropdown px-1" id="dmenu">
-               <a class="px-1 py-1 nav-link  font-weight-bold bordeoculto  border-bottom" style=" padding-left:20px; padding-right:20px;" href="https://www.icvnl.gob.mx/EstadodeCuenta#" id="navbarDropdown">Licencias<img class="imagen fas float-right img-responsive d-block" src="./Instituto de Control Vehicular_files/Iconos ICV-20.png" width="29px"></a>
-               <div class="dropdown-menu  dropdown-menu-right mega-menu2 multi-column border-0 sombradrop m-0" aria-labelledby="dropdown01">
-                  <div class="row m-0">
-                     <div class="col-md-12 col-sm-12 col-lg-12 col-lg-12 col-xl-12">
-                        <ul class="multi-column-dropdown text-left m-0">
-                           <li><a href="http://retys.nl.gob.mx/servicios/licencia-de-conducir-para-automovilista-chofer-o-motociclista-expedicion" target="_blank">Expedición por primera vez</a></li>
-                           <li><a href="https://www.icvnl.gob.mx/Licencia">Renovación en Línea</a></li>
-                           <li><a href="https://www.icvnl.gob.mx/Renovacionexpres">Renovación Exprés en Delegación</a></li>
-                           <li><a href="http://retys.nl.gob.mx/servicios/certificacion-de-licencias" target="_blank">Certificación de Licencia</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </li>
-            <li class="nav-item dropdown px-1" id="dmenu2">
-               <a class="px-1 py-1 nav-link font-weight-bold bordeoculto border-bottom " style=" padding-left:20px; padding-right:20px;" href="https://www.icvnl.gob.mx/EstadodeCuenta#" id="navbarDropdown2" aria-haspopup="true" aria-expanded="false">Autos<img class="imagen fas float-right img-responsive d-block" src="./Instituto de Control Vehicular_files/Iconos tramites (rojo fuerte)_Mesa de trabajo 2.png" width="29px"></a>
-               <div class="dropdown-menu dropdown-menu-right mega-menu text-left multi-column border-0 sombradrop m-0">
-                  <div class="row m-0">
-                     <div class="borde col-md-7 col-sm-7">
-                        <ul class="multi-column-dropdown m-0 pb-1 border-right border-bottom">
-                            <h5 class="pt-1">Servicio en Línea</h5>
-                           <!--<li><a class="pl-1" href="TarjetadeCirculación">Tarjeta de Circulación Vehicular Digital</a></li>-->
-                           <li><a class="pl-1" href="https://www.icvnl.gob.mx/EstadodeCuenta">Estado de Cuenta y Registro Vehicular</a></li>
-                           <li><a class="pl-1" href="https://egobierno.nl.gob.mx/egob/Tenencia.php" target="_blank">Pago de Refrendo</a></li>
-<li><a class="pl-1" href="https://www.icvnl.gob.mx/VentanillaEmpresarial">Ventanilla Empresarial Online </a></li>
-                        </ul>
-                        <ul class="multi-column-dropdown m-0  pt-1 w-100">
-                           <h5 class="pt-1">Trámites en Delegación</h5>
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/alta-de-vehiculos" target="_blank">Alta</a></li>
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/baja-de-vehiculo" target="_blank">Baja</a></li>
-                        </ul>
-                     </div>
-                     <div class="col-md-5 col-sm-5 px-1">
-                        <ul class="multi-column-dropdown m-0">
-                        <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/cambio-de-propietario-0" target="_blank">Cambio de Propietario</a></li>
-                           <!--<li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/convenio-de-pago-en-parcialidades-0" target="_blank">Convenio para Pago en Parcialidades</a></li>-->
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/reposicion-de-laminas" target="_blank">Reposición de Documentos</a></li>
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/certificacion-de-documentos" target="_blank">Certificaciones</a></li>
-                           <li><a class="pl-1" href="https://www.icvnl.gob.mx/PonloatuNombre">Ponlo a Tu Nombre</a></li>
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/alta-de-vehiculo-recreativo-todoterreno" target="_blank">Vehículos Todoterreno</a></li>
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$sm_main', 'form_main', ['tctl00$CPH_PRINCIPAL$UpdatePanel1','CPH_PRINCIPAL_UpdatePanel1','tctl00$CPH_PRINCIPAL$upMain','CPH_PRINCIPAL_upMain'], [], [], 90, 'ctl00');
+//]]>
+</script>
 
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </li>
-             <li class="nav-item dropdown px-1" style=" display:none" id="dmenu3">
-             <a class="px-1 py-0 amenu nav-link2 fa fa-ellipsis-h fa-2x amenu" href="https://www.icvnl.gob.mx/EstadodeCuenta#" id="navbarDropdown3" aria-haspopup="true" aria-expanded="false" style="color:#E5212F"></a>
-               <div class="dropdown-menu dropdown-menu-right mega-menu3 text-left  multi-column sombradrop border-0 m-0" aria-labelledby="dropdown01">
-               <div class="row m-0">
-                    <div class="col-md-12 col-sm-12 col-lg-12 col-lg-12 col-xl-12">
-                        <ul class="multi-column-dropdown m-0">
-                           <li><a href="https://www.icvnl.gob.mx/TarjetadeCirculaci%C3%B3n">Tarjeta de Circulación Vehicular Digital</a></li>
-                            <li><a href="http://retys.nl.gob.mx/servicios/ponlo-tu-nombre" target="_blank">Ponlo a Tu Nombre</a></li>
-                           <li><a href="https://egobierno.nl.gob.mx/egob/Tenencia.php" target="_blank">Pago de Refrendo</a></li>
-                           <li><a href="http://cfdi.nl.gob.mx/" target="_blank">Factura Electrónica (CFDI)</a></li>
-                        </ul>
-                     </div>
-               </div>
-               </div>
-            </li>
-             <li class="listaoculta  nav-item  px-1">
-             <a class="px-1 py-1 nav-link  font-weight-bold  border-bottom" href="https://www.icvnl.gob.mx/TarjetadeCirculaci%C3%B3n" style=" padding-left:20px; padding-right:20px" id="A3" aria-expanded="false">Tarjeta de Circulación Vehicular Digital<img class="imagen fas float-right img-responsive d-block" src="./Instituto de Control Vehicular_files/Tarjeta de Circualción.png" width="33px"></a>
-            </li>
-             <li class="listaoculta  nav-item  px-1">
-               <a class="px-1 py-1 nav-link  font-weight-bold border-bottom" href="https://www.icvnl.gob.mx/PonloatuNombre" style=" padding-left:20px; padding-right:20px" id="A4">Ponlo a Tu Nombre<img class="imagen fas float-right img-responsive d-block" src="./Instituto de Control Vehicular_files/Ponlo a tu nombre.png" width="29px"></a>
-            </li>
-            <li class="listaoculta nav-item dropdown px-1">
-               <a class="px-1 py-1 nav-link  font-weight-bold" href="https://www.icvnl.gob.mx/Delegaciones" style=" padding-left:20px; padding-right:20px" id="A5">Ubica tu Delegación<img class="imagen fas float-right img-responsive d-block" src="./Instituto de Control Vehicular_files/Ubica tu delegación.png" width="29px"></a>
-            </li>
-  <div class="h-100 buscar2">
-    <div class="d-flex float-left">
-        <div class="searchbar">
-        <input id="buscar2" class="search_input" onkeydown="BuscarEnter2(event)" type="text" name="">
-          <a href="https://www.icvnl.gob.mx/EstadodeCuenta#" onclick="Buscar2()" class="search_icon pb-0 py-0 px-1">
-          <i class=" fas fa-search"></i></a>
+            <div>
+                                          
+            </div>
+                
+    <button type="button" onclick="popitup()" class="btn btn-danger  displayNone">
+        Pagar</button>
+    <div id="CPH_PRINCIPAL_UpdatePanel1">
+            <input type="hidden" name="ctl00$CPH_PRINCIPAL$hfP" id="CPH_PRINCIPAL_hfP" value="kgDONRgkWtmWRNGJVdopY0JZBvfjybQSiMJXf7wJHI9nmbT15uAPxcdtWIkmZznKFOEEuCx%2f5wGGBh0EX%2fjE3w%3d%3d">
+            <input type="hidden" name="ctl00$CPH_PRINCIPAL$hfR" id="CPH_PRINCIPAL_hfR" value="cyLJusIuLK3gJQs2NK3ekycrGRos8Gp7FqofQkq%2fN4uNDpJrTxrFXjwyE%2flQfoiTWwHV8gW7IAWjP0oCBPMk2Q%3d%3d">
+            <input type="hidden" name="ctl00$CPH_PRINCIPAL$hfV" id="CPH_PRINCIPAL_hfV" value="IdoMRyGJAqiuehR%2fe%2bl8Fat%2fNSAzBcq91it%2bsZXvqhT5qiRkoc%2b1bkDKSilhmCwjJ%2bAloZ8HVsIwFVTuvFuz1g%3d%3d">
+            <input type="hidden" name="ctl00$CPH_PRINCIPAL$hfRef" id="CPH_PRINCIPAL_hfRef" value="/referencia.aspx?p=kgDONRgkWtmWRNGJVdopY0JZBvfjybQSiMJXf7wJHI9nmbT15uAPxcdtWIkmZznKFOEEuCx%2f5wGGBh0EX%2fjE3w%3d%3d&amp;v=IdoMRyGJAqiuehR%2fe%2bl8Fat%2fNSAzBcq91it%2bsZXvqhT5qiRkoc%2b1bkDKSilhmCwjJ%2bAloZ8HVsIwFVTuvFuz1g%3d%3d&amp;r=cyLJusIuLK3gJQs2NK3ekycrGRos8Gp7FqofQkq%2fN4uNDpJrTxrFXjwyE%2flQfoiTWwHV8gW7IAWjP0oCBPMk2Q%3d%3d">
         </div>
-    </div>
- </div>
- </ul>
-  <!--**********************************Menu celular********************************-->
-  <ul class="navbar-nav ml-auto aparecemenu">
-    <div class="h-100 buscar1">
-        <div class="input-group mb-0 border rounded-pill p-1 my-1">
-            <input type="search" placeholder="Buscar" id="buscar1" onkeydown="BuscarEnter(event)" aria-describedby="button-addon3" class="form-control bg-none border-0">
-            <div class="input-group-append border-0">
-              <button id="button-addon3" onclick="Buscar()" type="button" class="btn btn-link btnbuscar"><i class="fa fa-search"></i></button>
-            </div>
-          </div>
-    </div>
-     <li class="nav-item dropdown px-1" id="Li1">
-               <a class="px-1 py-1 nav-link  font-weight-bold bordeoculto border-bottom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" padding-left:20px; padding-right:20px;" href="https://www.icvnl.gob.mx/EstadodeCuenta#" id="A1">Licencias<img class="imagen fas float-right img-responsive d-block" src="./Instituto de Control Vehicular_files/Iconos ICV-20.png" width="29px"></a>
-               <div class="dropdown-menu  dropdown-menu-right mega-menu2 multi-column border-0 sombradrop m-0" aria-labelledby="dropdown01">
-                  <div class="row m-0">
-                     <div class="col-md-12 col-sm-12 col-lg-12 col-lg-12 col-xl-12">
-                        <ul class="multi-column-dropdown text-left m-0">
-                           <li><a href="http://retys.nl.gob.mx/servicios/licencia-de-conducir-para-automovilista-chofer-o-motociclista-expedicion" target="_blank">Expedición por primera vez</a></li>
-                           <li><a href="https://www.icvnl.gob.mx/Licencia">Renovación en Línea</a></li>
-                           <li><a href="https://www.icvnl.gob.mx/Renovacionexpres">Renovación Exprés en Delegación</a></li>
-                           <li><a href="http://retys.nl.gob.mx/servicios/certificacion-de-licencias" target="_blank">Certificación de Licencia</a></li></ul>
-                     </div>
-                  </div>
-               </div>
-            </li>
-            <li class="nav-item dropdown px-1" id="Li2">
-               <a class="px-1 py-1 nav-link font-weight-bold bordeoculto border-bottom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" padding-left:20px; padding-right:20px;" href="https://www.icvnl.gob.mx/EstadodeCuenta#" id="A2">Autos<img class="imagen fas float-right img-responsive d-block" src="./Instituto de Control Vehicular_files/Iconos tramites (rojo fuerte)_Mesa de trabajo 2.png" width="29px"></a>
-               <div class="dropdown-menu dropdown-menu-right mega-menu text-left multi-column border-0 sombradrop m-0">
-                  <div class="row m-0">
-                     <div class="borde col-md-6 col-sm-6">
-                        <ul class="multi-column-dropdown m-0 pb-1">
-                            <h5 class="pt-1">Servicio en Línea</h5>
-                           <!--<li><a class="pl-1" href="TarjetadeCirculación">Tarjeta de Circulación Vehicular Digital</a></li>-->
-                           <li><a class="pl-1" href="https://www.icvnl.gob.mx/EstadodeCuenta">Estado de Cuenta y Registro Vehicular</a></li>
-                           <li><a class="pl-1" href="https://egobierno.nl.gob.mx/egob/Tenencia.php" target="_blank">Pago de Refrendo</a></li>
-<li><a class="pl-1" href="https://www.icvnl.gob.mx/VentanillaEmpresarial">Ventanilla Empresarial Online</a></li>
-                        </ul>
-                        <ul class="multi-column-dropdown m-0  pt-1 w-100">
-                           <h5 class="pt-1 ">Trámites en Delegación</h5>
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/alta-de-vehiculos" target="_blank">Alta</a></li>
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/baja-de-vehiculo" target="_blank">Baja</a></li>
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/cambio-de-propietario-0" target="_blank">Cambio de Propietario</a></li>
-                        </ul>
-                     </div>
-                     <div class="col-md-6 col-sm-6">
-                        <ul class="multi-column-dropdown m-0">
-                           <!--<li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/convenio-de-pago-en-parcialidades-0" target="_blank">Convenio para Pago en Parcialidades</a></li>-->
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/reposicion-de-laminas" target="_blank">Reposición de Documentos</a></li>
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/certificacion-de-documentos" target="_blank">Certificaciones</a></li>
-                           <li><a class="pl-1" href="https://www.icvnl.gob.mx/PonloatuNombre">Ponlo a Tu Nombre</a></li>
-                           <li><a class="pl-1" href="http://retys.nl.gob.mx/servicios/alta-de-vehiculo-recreativo-todoterreno" target="_blank">Vehículos Todoterreno</a></li>
-
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </li>
-             <li class="listaoculta listaoculta2 nav-item dropdown px-1" id="Li4">
-              <a class="px-1 py-1 nav-link font-weight-bold  border-bottom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" padding-left:20px; padding-right:20px" href="https://www.icvnl.gob.mx/EstadodeCuenta#" id="A7">Otros Servicios<i class="imagen fas  fa-angle-down fa-lg float-right pr-2 pt-2" style="color:#E5212F"></i></a>
-               <div class="dropdown-menu dropdown-menu-right mega-menu text-left multi-column border-0 sombradrop m-0" aria-labelledby="dropdown01">
-               <div class="row m-0">
-                   <div class="col-12">
-                        <ul class="multi-column-dropdown m-0">
-                           <li><a href="http://cfdi.nl.gob.mx/" target="_blank">Factura Electrónica (CFDI)</a></li>
-                            <li><a href="https://egobierno.nl.gob.mx/egob/Tenencia.php" target="_blank">Pago de Refrendo</a></li>
-                        </ul>
-                     </div>
+    <div style="background-color: #e8e8e8; padding-bottom: 2%;">
+        <div id="CPH_PRINCIPAL_uprMain" style="display: none;" role="status" aria-hidden="true">
+	
+                <div class="loading_container text-center">
                 </div>
-               </div>
-            </li>
-             <!--<li class="listaoculta nav-item  px-1" >
-             <a class="px-1 py-1 nav-link  font-weight-bold  border-bottom" href="TarjetadeCirculación"  style=" padding-left:20px; padding-right:20px" id="A8"  aria-expanded="false">Tarjeta de Circulación Vehicular Digital<img class="imagen fas float-right img-responsive d-block"  src="../img/Web%20ICV/Iconos%20(más%20visto)/Tarjeta%20de%20Circualción.png"
-                                     width="33px"/></a>
-            </li>-->
-             <li class="listaoculta nav-item  px-1">
-               <a class="px-1 py-1 nav-link  font-weight-bold border-bottom" href="https://www.icvnl.gob.mx/PonloatuNombre" style=" padding-left:20px; padding-right:20px" id="A9">Ponlo a Tu Nombre<img class="imagen fas float-right img-responsive d-block" src="./Instituto de Control Vehicular_files/Ponlo a tu nombre.png" width="29px"></a>
-            </li>
-            <li class="listaoculta nav-item dropdown px-1">
-               <a class="px-1 py-1 nav-link  font-weight-bold" href="https://www.icvnl.gob.mx/Delegaciones" style=" padding-left:20px; padding-right:20px" id="A10">Ubica tu Delegación<img class="imagen fas float-right img-responsive d-block" src="./Instituto de Control Vehicular_files/Ubica tu delegación.png" width="29px"></a>
-            </li>
- </ul>
-   <!--**********************************Termina Menu Celular********************************-->
- </div>
- </div>
- </nav>
-        <!--visto1-->
-        <div class=" containerMasVisto">
-            <div class=" container py-3 paddingmasvisto">
-                <div class="row p-0 m-0 py-0 pt-1 p-0">
-                    <div class="p-0 m-0 py-0 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="d-flex align-items-center col-12 p-0">
-                            <div class="flex-shrink-0  p-0">
-                                <a href="https://www.icvnl.gob.mx/EstadodeCuenta#" onclick="navegarvistos(1)" class="btn-left btn-link p-0 toggle text-ligh p-0 apareceicono">
-                                    <i class="fas fa-angle-left pr-2 tipoletrafont"></i></a>
-                            </div>
-                            <div id="divmasvisto" class="flex-grow-1 w-100 o-hidden h-100 scrolling-wrapper-flexbox">
-                                <ul class="nav nav-fill  position-relative flex-nowrap col-12 h-100 w-100">
-                                    <li class="nav-item "><a class="w-100 h-100" href="https://www.icvnl.gob.mx/EstadodeCuenta">
-                                        <img class="imgiconomasvisto" src="./Instituto de Control Vehicular_files/EstadodeCuenta.png" width="60px">
-                                        <p class="tipoletraimg list-unstyled quick-linksl ajustartamaño text-center">
-                                            Estado de Cuenta y Registro Vehicular</p>
-                                    </a></li>
-                                    <li class="nav-item px-3 px-sm-3"><a class="w-100" href="https://egobierno.nl.gob.mx/egob/Tenencia.php" target="_blank">
-                                        <img class="imgiconomasvisto" src="./Instituto de Control Vehicular_files/Pago refrendo.png" width="60px">
-                                        <p class=" tipoletraimg list-unstyled quick-links text-center">
-                                            Pago Refrendo</p>
-                                    </a></li>
-				<li class="nav-item px-3 px-sm-3"><a class="w-100" href="https://www.icvnl.gob.mx/VentanillaEmpresarial">
-                                        <img src="./Instituto de Control Vehicular_files/icflotilla.png" class="imgiconomasvisto img-responsive center-block" width="60px">
-                                        <p class="tipoletraimg list-unstyled quick-links text-center ">
-                                            Ventanilla Empresarial Online</p>
-                                    </a></li>
-                                    <li class="nav-item px-3 px-sm-3"><a class="w-100" href="https://www.icvnl.gob.mx/Licencia">
-                                        <img class="imgiconomasvisto" src="./Instituto de Control Vehicular_files/Renovación en Línea.png" width="60px">
-                                        <p class="tipoletraimg list-unstyled quick-links text-center">
-                                            Renovación de Licencia<br> en Línea</p>
-                                    </a></li>
-                                   <!-- <li class="nav-item px-3 px-sm-3"><a class="w-100" href="TarjetadeCirculación">
-                                        <img class="imgiconomasvisto" src="../img/Web%20ICV/Iconos%20(más%20visto)/Tarjeta%20de%20Circualción.png"
-                                            class="img-responsive center-block" width="60px">
-                                        <p class="tipoletraimg list-unstyled quick-links text-center ">
-                                            Tarjeta de Circulación</br> Vehicular Digital</p>
-                                    </a></li>-->
-                                    <li class="nav-item px-3 px-sm-3"><a class="w-100" href="https://www.icvnl.gob.mx/tramites">
-                                        <img class="imgiconomasvisto" src="./Instituto de Control Vehicular_files/Trámites.png" width="60px">
-                                        <p class="tipoletraimg list-unstyled quick-links text-center">
-                                            Trámites</p>
-                                    </a></li>
-                                    <li class="nav-item px-3 px-sm-3"><a class="w-100" href="https://www.icvnl.gob.mx/Delegaciones">
-                                        <img src="./Instituto de Control Vehicular_files/Ubica tu delegación.png" class="imgiconomasvisto img-responsive center-block" width="60px">
-                                        <p class="tipoletraimg list-unstyled quick-links text-center ">
-                                            Ubica tu Delegación</p>
-                                    </a></li>
-                                    <li class="nav-item px-3 px-sm-3"><a class="w-100" href="http://cfdi.nl.gob.mx/" target="_blank">
-                                        <img src="./Instituto de Control Vehicular_files/Factura electronica.png" class="imgiconomasvisto img-responsive center-block" width="60px">
-                                        <p class="tipoletraimg list-unstyled quick-links text-center ">
-                                            Factura Electrónica (CFDI)</p>
-                                    </a></li>	
-							<li class="nav-item px-3 px-sm-3"><a class="w-100" href="https://www.icvnl.gob.mx/Certificado">
-                            <img src="./Instituto de Control Vehicular_files/ecologicoico.jpg" class="imgiconomasvisto img-responsive center-block" width="60px">
-                            <p class="tipoletraimg list-unstyled quick-links text-center ">
-                                Certificado Ecológico</p>
-                        </a></li>									
-                                </ul>
-                            </div>
-                            <div class="flex-shrink-0 p-0">
-                                <a href="https://www.icvnl.gob.mx/EstadodeCuenta#" onclick="navegarvistos(2)" class="btn-right btn-link toggle p-0 apareceicono">
-                                    <i class="fas fa-angle-right pl-2 tipoletrafont"></i></a>
-                            </div>
-                        </div>
-                        <script src="./Instituto de Control Vehicular_files/jquery-3.3.1.slim.min.js.descarga" type="text/javascript"></script>
-                    </div>
+                <div class="loading_background">
                 </div>
-            </div>
-            <!--visto2-->
-            <!--**********************************Termina el Contenido********************************-->
             
-    <div class="divPrincipal" style="padding-top: 2%; padding-bottom: 4%;">
-        <div class=" container">
-            <p class="tipoLetraTitulos"> 
-                CONSULTA EL ESTADO DE CUENTA Y DEL REGISTRO DE TU VEHÍCULO<a href="javascript:history.back();"><i class="fas fa-undo-alt  fa-lg float-right" style="color: #E5212F"></i></a></p>
-<!--<BR><a>Por el momento, fuera de servicio, en mantenimiento.</a>-->
-				
-				
-				<iframe name="estadodecuenta" class="" id="myIframe" frameborder="0" style="border: 0px none transparent; background-color: transparent; overflow: hidden; height: 1925px;" scrolling="no" src="./Instituto de Control Vehicular_files/Consultaestadocuenta.html" width="100%" target="_top"></iframe>
-				
-            <script src="./Instituto de Control Vehicular_files/iframeResizer.min.js.descarga" type="text/javascript"></script>
-            <script type="text/javascript">                iFrameResize({ log: false }, '#myIframe')</script>
-        </div>
+</div>
+        <div id="CPH_PRINCIPAL_upMain">
+                <div>
+                    <div>
+                        <br>
+                        
+                        
+                        <div id="CPH_PRINCIPAL_pnlResultado">
+	
+                            <img src="./blank.gif" onload="javascript:showCodigoBarras()">
+                            <div id="contenidoEstadoCuenta">
+                                <img src="./vehiculoConAdeudo22.png" class="w-100" style="max-width: 612px" border="0" alt="Vehiculo con Adeudo">
+                                <a href="https://icvnl.gob.mx/Certificado" target="_blank">
+                                    
+                                </a>
+                                <div style="max-width: 612px" class="w-100 p-0 pb-3 text-right px-0 pt-2">
+                                    
+                                </div>
+                                <br>
+                                <div class="row m-0" style="margin: 0">
+                                    <div class="w-100">
+                                        <strong><legend>
+                                            <span id="CPH_PRINCIPAL_lblPlaca">SSV195B</span></legend></strong>
+                                    </div>
+                                    <div class=" align-self-center" style="font-weight: bold">
+                                        <strong><legend>
+                                            <span id="CPH_PRINCIPAL_lblMarca">DODGE</span>
+                                            <span id="CPH_PRINCIPAL_lblModelo">2010</span>,
+                                            <span id="CPH_PRINCIPAL_lblLinea">CHALLENGER</span>,
+                                            <span id="CPH_PRINCIPAL_lblTipo">CIL 6 2 PTAS 5 PAS COLOR:ROJO NIV:*****70274</span>
+                                        </legend></strong>
+                                    </div>
+                                    <div class="w-100">
+                                    </div>
+                                    <div id="divTCIndefinidaMsg" class="">
+                                    </div>
+                                    <div class="w-100">
+                                    </div>
+                                    <div id="divStatus" style="display: none;">
+                                        <div class="">
+                                            <legend><strong>STATUS:
+                                                <span id="CPH_PRINCIPAL_lblEstatus">0</span></strong></legend>
+                                        </div>
+                                        <div class="w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-auto p-0">
+                                        <strong><legend style="font-size: 1.7rem;">Total</legend></strong>
+                                    </div>
+                                    <div class="col">
+                                        <strong><legend>
+                                            <span id="CPH_PRINCIPAL_lblTotal" style="font-size: 1.7rem; border-bottom: 2px solid black">$2,877.00</span></legend></strong>
+                                    </div>
+                                    <div class="w-100">
+                                    </div>
+                                    
+                                    <div class="col-12 p-0">
+                                        Su pago podrá ser recibido en cualquier sucursal de los siguientes bancos o instituciones
+                                        autorizadas o mediante su banca electrónica de su respectivo banco.
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row m-0">
+                                    <div class=" w-100">
+                                        Línea de Referencia
+                                    </div>
+                                    <div class=" w-100">
+                                        <strong>
+                                            <span id="CPH_PRINCIPAL_lblLR">18000 00000 00000 43224 85430 82295</span></strong>
+                                    </div>
+                                    <div class="w-100">
+                                    </div>
+                                    <img id="codigoBarrasLR" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAAtCAYAAADFlAU9AAAAAXNSR0IArs4c6QAAAkhJREFUeF7t3NGSgjAMheH1/R96d1CrmdhSGZYMOt9euSgW/ub0hAS8/PhDAIEyApeykQyEAAI/BCcIECgkQHCFsA2FAMGJAQQKCRBcIWxDIUBwYgCBQgIEVwjbUAgQnBhAoJAAwRXCNhQCWwT3e8e17LO8bvu27cvbedvsM+272r5xjGXb2v/f+NnIK87N7FwzqzxXLdJHc9cbN85rntv4PfnY4rHEeZ2dz7uxk2MvxtDoPEfH9O7xrZ1T7/yHKwvB3dD0AnQWAHmx+I8FguDGi2xPHE18vcUhCpPggkueJdjP4LIER3APd5RSHu+GBEdwBBeuXY9OPwmO4AiO4K4E8mKQr596RZF3ixK9Ityo4KZoEkoys0LDaOLOcP10hmPgcByOw3E4Dhcq2dm1tQXuAvnE6ieH43AcjsNxOA63fhfK0dXEo673OByH43AcjsNxOA4XK75rjp7vdZ2V4HvleG2BZ7wpmnSKJFLKG5R8Y6+bl1+5ZCY5dlqKN1q4VClVKbs3Y/ea0L2nEDjca/YURcjhONyVwKgNIqW8BUiPQ28R4nCD5+xmz4jpw0kpZ7ebEdxKRfBTr8u2tBC0BbQFtAW0BbQFtAW0BbQFnj/14YnvgSuM+jlb0q5v/qyUUkoppZRSSimllFJKKaWU0s/k7XRDKaWUUkq5U0RbrjkJjuAegvMCAQR2EtjyQ7A7h7I7AggQnBhAoJAAwRXCNhQCBCcGECgkQHCFsA2FAMGJAQQKCRBcIWxDIUBwYgCBQgIEVwjbUAj8ARkxX3nP79JSAAAAAElFTkSuQmCC">
+                                </div>
+                                
+                                <br>
+                                <table>
+                                    <tbody><tr>
+                                        <td>
+                                            <strong>Recuerda que puedes pagar solamente mencionando tu placa en:</strong>
+                                        </td>
+                                        <td>
+                                            <img src="./banorteLogo.png" style="padding-left: 10px; padding-right: 10px" height="35px">
+                                        </td>
+                                        <td>
+                                            <img src="./afirme_Logo.png" style="padding-left: 10px; padding-right: 10px" height="35px">
+                                        </td>
+                                        <!--<td>
+                                            <img src="images/oxxoicv.png" style="padding-left: 10px; padding-right: 10px" height="35px">
+                                        </td>-->
+										<td>
+                                            <img src="./logobanregio.png" style="padding-left: 10px; padding-right: 10px" height="35px">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                <br>
+                                <div id="divBancos">
+                                    <br>
+                                    <table class="table table-sm  table-hover border-white" style="margin-top: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./banorteLogo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">Empresa 3508 INSTITUTO DE CONTROL VEHICULAR DEL ESTADO NL
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./banamexLogo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">Servicio 4552-01 ICV NUEVO LEON
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./bancomerLogo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">CONVENIO CIE: 1480138 INSTITUTO DE CONTROL VEHICULAR
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./scotiabankLogo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">Servicio 4303 INSTITUTO DE CONTROL VEHICULAR DEL ESTADO DE NUEVO LEÓN
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./hsbcLogo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">Servicio 583 INSTITUTO DE CONTROL VEHICULAR DEL ESTADO DE NUEVO LEÓN
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./santanderLogo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">Servicio 9735 ICV NUEVO LEÓN
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./telecommLogo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">Empresa 3508 INSTITUTO DE CONTROL VEHICULAR DEL ESTADO NL
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./azteca_Logo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">ICV NUEVO LEON
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./elektra_Logo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">ICV NUEVO LEON
+                                                </td>
+                                            </tr>
+                                            <tr>
+											</tr><tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./logobanregio.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">Menciona tu <strong>Placa:
+                                                        <span id="CPH_PRINCIPAL_lblPlacaO">SSV195B</span></strong>.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="./7elevenLogo.png" height="30px">
+                                                </td>
+                                                <td style="vertical-align: middle">Facturador 3508 INSTITUTO DE CONTROL VEHICULAR DEL ESTADO NL **
+                                                </td>
+                                            </tr>
+                                            <!--<tr>
+                                                <td style="vertical-align: middle">
+                                                    <img src="images/oxxoicv.png" height="30px" />
+                                                </td>
+                                                <td style="vertical-align: middle">Utiliza la Referencia de este Estado de Cuenta (Código de Barras) ó menciona tu
+                                                    <strong>Placa:
+                                                        <span id="CPH_PRINCIPAL_lblPlacaO2"></span></strong>.**
+                                                </td>
+                                            </tr>-->
+                                            <tr>
+                                                <td colspan="2">** Se aplicará cargo por servicio propio del establecimiento.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>									
+                                </div>
+                                
+                                        <table class="table table-striped table-sm table-borderless mb-0 ">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3">
+                                                        <label style="font-size: 1.5rem; font-weight: bold; text-align: center; width: 100%">
+                                                            CARGOS:</label>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="3">
+                                                        <legend><strong>Estatales</strong></legend>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">Concepto
+                                                    </th>
+                                                    <th scope="col">Año
+                                                    </th>
+                                                    <th scope="col">Importe
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                    
+                                        <tr>
+                                            <td style="width: 70%">
+                                                <span id="CPH_PRINCIPAL_rptAdeudos_lblConcepto_0">REFRENDO PTE.AÑO</span>
+                                            </td>
+                                            <td style="width: 15%">
+                                                <span id="CPH_PRINCIPAL_rptAdeudos_lblAnio_0">2024</span>
+                                            </td>
+                                            <td style="width: 15%">
+                                                <span id="CPH_PRINCIPAL_rptAdeudos_lblConceptoTotal_0">$3,800.00</span>
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td style="width: 70%">
+                                                <span id="CPH_PRINCIPAL_rptAdeudos_lblConcepto_1">SANCION REFRENDO PTE.AÑO</span>
+                                            </td>
+                                            <td style="width: 15%">
+                                                <span id="CPH_PRINCIPAL_rptAdeudos_lblAnio_1">2024</span>
+                                            </td>
+                                            <td style="width: 15%">
+                                                <span id="CPH_PRINCIPAL_rptAdeudos_lblConceptoTotal_1">$163.00</span>
+                                            </td>
+                                        </tr>
+                                    
+                                        </tbody> </table>
+                                    
+                                
+                                <table class="table table-striped table-sm table-borderless  my-0">
+                                    <tbody><tr style="background-color: #dddddd">
+                                        <td style="width: 70%">
+                                            <strong>SUBTOTAL CARGOS ESTATALES Y MUNICIPALES</strong>
+                                        </td>
+                                        <td style="width: 15%"></td>
+                                        <td style="width: 15%">
+                                            <strong>
+                                                <span id="CPH_PRINCIPAL_lblTotalCargo">$3,963.00</span></strong>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                        <table class="table table-striped table-sm table-borderless  my-0">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3">
+                                                        <label style="font-size: 1.5rem; color: Black; font-weight: bold; text-align: center; width: 100%">
+                                                            SUBSIDIOS Y OTROS DESCUENTOS:</label>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="3">
+                                                        <legend><strong>Estatales</strong></legend>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                    
+                                        <tr>
+                                            <td style="width: 70%">
+                                                <span id="CPH_PRINCIPAL_rptDescuentos_lblConcepto_0">SUBSIDIO ANTIGUEDAD 10 AÑOS</span>
+                                            </td>
+                                            <td style="width: 15%">
+                                                <span id="CPH_PRINCIPAL_rptDescuentos_lblAnio_0">2024</span>
+                                            </td>
+                                            <td style="width: 15%">
+                                                <span id="CPH_PRINCIPAL_rptDescuentos_lblConceptoTotal_0">-$1,086.00</span>
+                                            </td>
+                                        </tr>
+                                    
+                                        </tbody> </table>
+                                        
+                                    
+                                <table class="table table-striped table-sm table-borderless  my-0">
+                                    <tbody><tr style="background-color: #dddddd">
+                                        <td>
+                                            <strong>SUBTOTAL SUBSIDIOS Y OTROS DESCUENTOS ESTATALES</strong>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <strong>
+                                                <span id="CPH_PRINCIPAL_lblTotalDescuentos">-$1,086.00</span></strong>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                <br>
+                                <table class="table table-striped table-sm  mt-0">
+                                    <tbody><tr style="background-color: #dddddd">
+                                        <td style="width: 70%">
+                                            <legend><strong>TOTAL A PAGAR</strong></legend>
+                                        </td>
+                                        <td style="width: 15%"></td>
+                                        <td style="width: 15%">
+                                            <legend><strong>
+                                                <span id="CPH_PRINCIPAL_lblTotal2">$0.00</span>
+                                            </strong></legend>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                <div class="row m-0 justify-content-end">
+                                    <!--<div class="col col-md-auto"><strong><i>Vence el día <span id="CPH_PRINCIPAL_lblUltimoDiaMes">31/07/2024</span></i></strong></div>-->
+                                    <div class="col col-md-auto">
+                                        <strong><i>Vence el día 31/07/2024</i></strong>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    NOTA IMPORTANTE
+                                </div>
+                                <div class="col-12">
+                                    - Este formato NO es un comprobante de pago.
+                                </div>
+                                <div class="col-12">
+                                    - Los bancos autorizados solo reciben efectivo y cheques del mismo banco.
+                                </div>
+                                <!--<div class="col-12">
+                                    - 4 días hábiles después de tu pago puedes descargar tu Tarjeta de Circulación Vehicular
+                                    Complementaria en <a target="_blank" href="https://www.icvnl.gob.mx/TarjetadeCirculación">Tarjeta de Circulacion</a>
+                                </div>-->
+                                <div class="col-12">
+                                    - Podrás solicitar tu factura electrónica (CFDI) después de 4 días hábiles en la
+                                    página <a href="http://cfdi.nl.gob.mx/" target="_blank">http://cfdi.nl.gob.mx</a>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col col-md-auto">
+                                        <strong><i>Si deseas pagar en Línea a través de la Tesorería Virtual da <a href="https://egobierno.nl.gob.mx/egob/PagoRefrendo.php" target="_blank">click aquí</a></i></strong>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <!--
+<p>**El programa Ponlo a tu nombre se realiza exclusivamente en las <a class="ligaRoja" href="http://www.nl.gob.mx/listado-ubicaciones/59332" target="_blank">Delegaciones del ICV</a> </p>
+<p> **El programa Ponte al Corriente ya se encuentra aplicado en este Estado de Cuenta</p> 
+<img src="images/promociones.png" border="0" alt="Programas Actuales" height="550px" />-->
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-12 col-md-8">
+                                    <div id="msgSuccessMail" class="col alert alert-success" style="display: none;" role="alert">
+                                        Se ha enviado un correo con el estado de cuenta!
+                                    </div>
+                                    <div id="msgErrorMail" class="col alert alert-danger" style="display: none;" role="alert">
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                </div>
+                                <div class="col-sm-12 col-md-4 p-0">
+                                    <div class="input-group margin-bottom-sm">
+                                        <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                                        <input type="text" id="txtCorreo" placeholder="Correo" class="form-control" maxlength="50" onkeypress="return disableEnterKey(event)">
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                </div>
+                                <div class="col-sm-12 col-md-4 p-0">
+                                    <a id="btnEnviarCorreo" class="btn btn-sm btn-block btn-danger mb-1" href="https://www.icvnl.gob.mx:1034/edocuenta24/Consultaestadocuenta.aspx#" onclick="javascript:EnviarPorCorreo();">
+                                        <i class="fa fa-envelope"></i>Enviar al correo </a>
+                                </div>
+                                <div class="col-sm-12 col-md-4 p-0">
+                                    <a class="btn btn-sm btn-block btn-danger mb-1" href="https://www.icvnl.gob.mx:1034/edocuenta24/Consultaestadocuenta.aspx#" onclick="javascript:Imprimir(document.getElementById(&#39;contenidoEstadoCuenta&#39;));">
+                                        <i class="fa fa-print"></i>Imprimir </a>
+                                </div>
+                                <div class="col-sm-12 col-md-4 p-0">
+                                    <a id="btnRegresar" href="https://www.icvnl.gob.mx:1034/edocuenta24/ConsultaEstadoCuenta.aspx" class="btn btn-sm btn-block btn-danger mb-1">
+                                        <i class="fa fa-arrow-left"></i>Regresar </a>
+                                </div>
+                            </div>
+                            <br>
+                        
+</div>
+                        
+                        
+                    </div>
+                    <label class=" w-75 text-right" id="lblVersion">
+                        Versión 1.6</label>
+                </div>
+                <script src="./iframeResizer.contentWindow.min.js.descarga" type="text/javascript"></script>
+            </div>
     </div>
 
-        </div>
-    </div>
-    </form>
-    <!-- Footer -->
-    <section class="pt-2" id="footer">
-       <div class="container">
-           <div class="row m-0 p-0 pb-0 text-center col-12">
-            <ul class="list-unstyled list-inline social  text-sm-center text-center redesaparece col-12 mb-0">
-						<li class="list-inline-item"><a href="https://www.facebook.com/ICVNL/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-						<li class="list-inline-item"><a href="https://www.instagram.com/icvnl/?hl=es-la" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="https://twitter.com/icvnl" target="_blank"><img class="mb-2 movimiento" src="./Instituto de Control Vehicular_files/X.png" width="30px"></a></li>
-                        <li class="list-inline-item p-0"><a href="tel:070"><img class="mb-2 movimiento" src="./Instituto de Control Vehicular_files/Iconos ICV-28.png" width="30px"></a></li>
-		     </ul>
-              <div class="pt-2 pt-lg-1 m-0 pr-0 col-lg-12 col-xl-12 float-right text-right columna">
-               <ul class="list-unstyled list-inline social redesdesaparece float-right">
-						<li class="list-inline-item p-0"><a href="https://www.facebook.com/ICVNL/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-						<li class="list-inline-item p-0"><a href="https://www.instagram.com/icvnl/?hl=es-la" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item p-0"><a href="https://twitter.com/icvnl" target="_blank"><img class="mb-2 movimiento" src="./Instituto de Control Vehicular_files/X.png" width="30px"></a></li>
-                        <li class="list-inline-item p-0"><img class="mb-2 movimiento" src="./Instituto de Control Vehicular_files/Iconos ICV-28.png" width="30px"></li>
-			  </ul>
-              </div>
-                 <div class="m-0 p-0 movimiento col-md-12 col-lg-auto pt-2 pt-lg-1"><div class="border-right pr-lg-3 pr-xl-4 ocultarlinea" style="font-weight:lighter; color:White"><a class="p-0 m-0" href="https://www.icvnl.gob.mx/TramitesdeAutos">Autos</a></div></div>
-                 <div class="m-0 p-0 movimiento col-md-12 col-lg-auto pt-2 pt-lg-1"><div class="border-right pl-lg-3 pr-lg-3 pl-xl-4 pr-xl-4 ocultarlinea" style="font-weight:lighter; color:White"><a class="p-0 m-0" href="https://www.icvnl.gob.mx/TramitesdeLicencia">Licencia</a></div></div>
-                 <div class="m-0 p-0 movimiento col-md-12 col-lg-auto pt-2 pt-lg-1"><div class="border-right pr-lg-3 pl-lg-3  pl-xl-4 pr-xl-4 ocultarlinea " style="font-weight:lighter; color:White;"><a class="p-0 m-0" href="https://www.icvnl.gob.mx/Reclutamiento">Reclutamiento</a></div></div>
-                  <div class="m-0 p-0 movimiento col-md-12 col-lg-auto pt-2 pt-lg-1"><div class="border-right pr-lg-3 pl-lg-3 pl-xl-4 pr-xl-4 ocultarlinea " style="font-weight:lighter; color:White;"><a class="p-0 m-0" href="https://www.icvnl.gob.mx/Transparencia">Normatividad y Transparencia</a></div></div>
-                  <div class="m-0 p-0 movimiento col-md-12 col-lg-auto pt-2 pt-lg-1"><div class="pl-lg-3 pr-lg-3 pl-xl-4 ocultarlinea " style="font-weight:lighter; color:White;"><a class="p-0 m-0 m-0" href="https://www.icvnl.gob.mx/AvisoPrivacidad">Avisos de Privacidad</a></div></div>
-           </div>
-		   </div>
-                <!-- <div class="m-0 p-0 movimiento col-md-12 col-lg-auto pt-2 pt-lg-1"><div class="border-right pr-lg-3 pr-xl-4 ocultarlinea" style="font-weight:lighter; color:White"><a class="p-0 m-0" href="actafallo">Acta de Fallo CAP-1-2021</a></div></div>-->
-                 
-            <div class="col-12 col-sm-12 col-lg-12 pt-2">
-					<ul class="list-unstyled  float-right list-inline p-0">
-						<li class="p-0" style="color:#fff"><a>Versión 1.1</a></li>
-					</ul>
-				</div>
-			
-       
-	</section>
-    <!-- ./Footer -->
-    <script src="./Instituto de Control Vehicular_files/popper.min.js.descarga" type="text/javascript"></script>
-    <script src="./Instituto de Control Vehicular_files/jquery-3.3.1.slim.min.js.descarga" type="text/javascript"></script>
-    <script src="./Instituto de Control Vehicular_files/bootstrap.min.js.descarga" type="text/javascript"></script>
-    <script src="./Instituto de Control Vehicular_files/contenido.js.descarga" type="text/javascript"></script>
+        
 
-</body></html>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"CPH_PRINCIPAL_upMain","displayAfter":250,"dynamicLayout":true}, null, null, $get("CPH_PRINCIPAL_uprMain"));
+});
+//]]>
+</script>
+<span style="display: none !important;"><input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTU0MjIzMjU1OQ9kFgJmD2QWAgIDD2QWAgIDD2QWAgIFD2QWAmYPZBYEAgEPDxYCHgdWaXNpYmxlaGQWBgIBDw8WAh4EVGV4dAUHU1NWMTk1QmRkAgMPEA8WAh4HQ2hlY2tlZGhkZGRkAgsPZBYCAgEPDxYCHwFlZGQCBQ8PFgIfAGdkFhwCBQ8PFgIfAQUHU1NWMTk1QmRkAgcPDxYCHwEFBURPREdFZGQCCQ8PFgIfAQUEMjAxMGRkAgsPDxYCHwEFCkNIQUxMRU5HRVJkZAINDw8WAh8BBSxDSUwgNiAyIFBUQVMgNSBQQVMgQ09MT1I6Uk9KTyBOSVY6KioqKio3MDI3NGRkAg8PDxYCHwEFATBkZAIRDw8WAh8BBQkkMiw4NzcuMDBkZAIVDw8WAh8BBSMxODAwMCAwMDAwMCAwMDAwMCA0MzIyNCA4NTQzMCA4MjI5NWRkAh0PFgIeC18hSXRlbUNvdW50AgIWBAIBD2QWBgIBDw8WAh8BBRFSRUZSRU5ETyBQVEUuQcORT2RkAgMPDxYCHwEFBDIwMjRkZAIFDw8WAh8BBQkkMyw4MDAuMDBkZAICD2QWBgIBDw8WAh8BBRlTQU5DSU9OIFJFRlJFTkRPIFBURS5Bw5FPZGQCAw8PFgIfAQUEMjAyNGRkAgUPDxYCHwEFByQxNjMuMDBkZAIhDw8WAh8BBQkkMyw5NjMuMDBkZAIjDxYCHwMCARYCAgEPZBYGAgEPDxYCHwEFHFNVQlNJRElPIEFOVElHVUVEQUQgMTAgQcORT1NkZAIDDw8WAh8BBQQyMDI0ZGQCBQ8PFgIfAQUKLSQxLDA4Ni4wMGRkAiUPDxYCHwEFCi0kMSwwODYuMDBkZAInDw8WAh8BBQkkMiw4NzcuMDBkZAIpDw8WAh8BBQozMS8wNy8yMDI0ZGRkUD9AA4cqClyqLtzlYN9HCdZzUvwyf+7cP2zQX3iSO0Q="></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B5B1F861"></span><span style="display: none !important;"><input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAVi7A4Vp5+mUsAwUxo53AIiOUggAcHVN526A9NQRe3IvpuaN7uaamzIh3eq1WWA+8gcZlkl/cGHO4wZ6cm1xD2JSc8KlVLpk8w1zX34EmMPwf+xF67WAMQ/OXHXZ8Z4kSJ10hMkr8aA/HKtPBdS2Ux4"></span></form>
+    </div>
+
+
+
+
+
+
+
+<div style="clear: both; display: block; height: 0px;"></div></body></html>
