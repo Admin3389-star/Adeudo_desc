@@ -600,7 +600,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$sm_main', 'form_main', ['tctl
                                                 <span id="CPH_PRINCIPAL_rptDescuentos_lblAnio_0">2024</span>
                                             </td>
                                             <td style="width: 15%">
-                                                <span id="CPH_PRINCIPAL_rptDescuentos_lblConceptoTotal_0">-$1,086.00</span>
+                                                <span id="CPH_PRINCIPAL_rptDescuentos_lblConceptoTotal_0">-$16.00</span>
                                             </td>
                                         </tr>
                                     
@@ -615,7 +615,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$sm_main', 'form_main', ['tctl
                                         <td></td>
                                         <td>
                                             <strong>
-                                                <span id="CPH_PRINCIPAL_lblTotalDescuentos">-$1,086.00</span></strong>
+                                                <span id="CPH_PRINCIPAL_lblTotalDescuentos">-$1.00</span></strong>
                                         </td>
                                     </tr>
                                 </tbody></table>
